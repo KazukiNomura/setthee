@@ -6,15 +6,15 @@
             </div>
 
             <!-- form start -->
-            <form role="form">
+            <?php echo Form::open(array('method' => 'post')); ?>
               <div class="box-body">
                 <div class="col-md-6">
                   <i class="fa fa-cutlery">&nbsp;<label for="exampleInputEmail1">Shop name</label></i>
-                  <input type="textarea" class="form-control" id="exampleInputEmail1" placeholder="shop name">
+                  <input type="textarea" name = "shop_name" class="form-control" id="exampleInputEmail1" placeholder="shop name">
                 </div>
                 <div class="col-md-6">
                    <i class="fa fa-cab">&nbsp;<label for="exampleInputPassword1">Address</label></i>
-                  <input type="textarea" class="form-control" id="exampleInputPassword1" placeholder="Shop address">
+                  <input type="textarea" name="address" class="form-control" id="exampleInputPassword1" placeholder="Shop address">
                 </div>
 
                <div class="col-md-6">
@@ -24,7 +24,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-phone"></i>
                   </div>
-                  <input type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
+                  <input type="text" name="phone" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
                 </div>
                 <!-- /.input group -->
               </div>
@@ -74,7 +74,7 @@
 
               </div>
               <!-- /.box-body -->
-            </form>
+            <?php echo Form::close(); ?>
           </div>
 <!-- Shop_Header -->
 

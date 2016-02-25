@@ -1,7 +1,7 @@
 -- テーブルの構造 `shop`
 --
 
-CREATE TABLE `shop` (
+CREATE TABLE `t_shop` (
   `id` int(11) NOT NULL,
   `shop_name` varchar(128) NOT NULL,
   `address` varchar(32) NOT NULL,

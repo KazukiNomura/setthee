@@ -7,7 +7,7 @@
  */
 namespace ERS\Common;
 
-use ERS\Common\Model\Model_Admin_History;
+// use ERS\Common\Model\Model_Admin_History;
 
 class Model extends \Orm\Model
 {

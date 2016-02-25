@@ -3,14 +3,18 @@ namespace ERS\Common\Model;
 
 use ERS\Common\Model;
 
-class Model_Report extends Model
+class Model_T_Coupon extends Model
 {
     protected static $_properties = array(
-        'type',
-        'menu_name',
+        'id',
+        'coupon_title',
+        'thumbnail',
         'description',
-        'photo',
-        'report_id',
+        'conditions1',
+        'conditions2',
+        'conditions3',
+        'conditions4',
+        'expiration_date',
         'del_flag',
         'created_at',
         'updated_at',
@@ -27,6 +31,6 @@ class Model_Report extends Model
         ),
     );
 
-    protected static $_table_name = 'report';
+    protected static $_table_name = 't_coupon';
     protected static $_primary_key = array('id');
 }

@@ -1,7 +1,7 @@
 -- テーブルの構造 `report`
 --
 
-CREATE TABLE `report` (
+CREATE TABLE `t_report` (
   `type` varchar(64) NOT NULL,
   `menu_name` varchar(128) NOT NULL,
   `description` text NOT NULL,

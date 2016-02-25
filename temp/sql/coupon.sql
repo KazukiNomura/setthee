@@ -1,7 +1,7 @@
 -- テーブルの構造 `coupon`
 --
 
-CREATE TABLE `coupon` (
+CREATE TABLE `t_coupon` (
   `id` int(11) NOT NULL,
   `coupon_title` varchar(128) NOT NULL,
   `thumbnail` varchar(32) NOT NULL,

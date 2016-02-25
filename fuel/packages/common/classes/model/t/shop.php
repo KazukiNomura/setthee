@@ -3,7 +3,7 @@ namespace ERS\Common\Model;
 
 use ERS\Common\Model;
 
-class Model_Shop extends Model
+class Model_T_Shop extends Model
 {
     protected static $_properties = array(
         'id',
@@ -48,6 +48,6 @@ class Model_Shop extends Model
         ),
     );
 
-    protected static $_table_name = 'shop';
+    protected static $_table_name = 't_shop';
     protected static $_primary_key = array('id');
 }
