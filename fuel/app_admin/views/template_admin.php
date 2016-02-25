@@ -329,15 +329,25 @@
             <span class="label label-primary pull-right">4</span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/report/reportlist"><i class="fa fa-circle-o"></i>Report List</a></li>
-            <li><a href="/report/reportinput"><i class="fa fa-circle-o"></i>Report Customize</a></li>
+            <li><a href="/report/list"><i class="fa fa-circle-o"></i>Report List</a></li>
+            <li><a href="/report/input"><i class="fa fa-circle-o"></i>Report from</a></li>
           </ul>
         </li>
-        <li>
-            <li><a href="/coupon/couponlist"><i class="fa fa-plus-square"></i>Coupon List</a></li>
-            <li><a href="/coupon/couponinput.php"><i class="fa fa-plus-square"></i>Coupon Customize</a></li>
+
+        <li class="treeview">
+            <a href="#">
+            <i class="fa fa-plus-square"></i>
+            <span>Coupon</span>
+            <span class="label label-primary pull-right">4</span>
           </a>
+        <ul class="treeview-menu">
+            <li><a href="/coupon/list"><i class="fa fa-circle-o"></i>Coupon List</a></li>
+            <li><a href="/coupon/input.php"><i class="fa fa-circle-o"></i>Coupon form</a></li>
+          </a>
+        </ul>
         </li>
+
+
         <li class="treeview">
           <!-- <a href="#">
             <i class="fa fa-pie-chart"></i>

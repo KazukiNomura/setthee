@@ -24,7 +24,7 @@ use Controller\View_Admin;
 // Model
 use ERS\Common\Model;
 
-class Controller_report extends View_Admin
+class Controller_Report extends View_Admin
 {
     /**
      * Reportリスト
@@ -37,9 +37,9 @@ class Controller_report extends View_Admin
         $data = array();
 
         // View
-        $this->template->title = $data['title'] = array('ReportList');
+        $this->template->title = $data['title'] = array('Report List');
         $this->template->auth  = $this->auth;
-        $this->template->content = View::forge('report/reportlist', $data);
+        $this->template->content = View::forge('report/list', $data);
     }
 
     /**
@@ -53,8 +53,8 @@ class Controller_report extends View_Admin
         $data = array();
 
         // View
-        $this->template->title = $data['title'] = array('Reportcustomize');
+        $this->template->title = $data['title'] = array('Report form');
         $this->template->auth  = $this->auth;
-        $this->template->content = View::forge('report/reportinput', $data);
+        $this->template->content = View::forge('report/input', $data);
     }	
 }

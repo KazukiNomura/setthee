@@ -24,7 +24,7 @@ use Controller\View_Admin;
 // Model
 use ERS\Common\Model;
 
-class Controller_coupon extends View_Admin
+class Controller_Coupon extends View_Admin
 {
     /**
      * Reportリスト
@@ -37,9 +37,9 @@ class Controller_coupon extends View_Admin
         $data = array();
 
         // View
-        $this->template->title = $data['title'] = array('couponlist');
+        $this->template->title = $data['title'] = array('Coupon List');
         $this->template->auth  = $this->auth;
-        $this->template->content = View::forge('coupon/couponlist', $data);
+        $this->template->content = View::forge('coupon/list', $data);
     }
 
     /**
@@ -53,8 +53,8 @@ class Controller_coupon extends View_Admin
         $data = array();
 
         // View
-        $this->template->title = $data['title'] = array('couponcustomize');
+        $this->template->title = $data['title'] = array('Coupon form');
         $this->template->auth  = $this->auth;
-        $this->template->content = View::forge('coupon/couponinput', $data);
+        $this->template->content = View::forge('coupon/input', $data);
     }	
 }
