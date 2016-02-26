@@ -51,7 +51,7 @@
                 <!-- Select multiple-->
                 <div class="col-md-6">
                   <i class="fa fa-users">&nbsp;<label>Genre</label></i>
-                  <select multiple class="form-control" name="genre">
+                  <select multiple class="form-control" name="genre_id">
                     <option>Myanmar Food</option>
                     <option>Japanese Food</option>
                     <option>Italian Food</option>
@@ -113,34 +113,34 @@
                   <i class="fa fa-credit-card">&nbsp;<label>Credit Card</label></i>
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" name="credit" value="not">
+                      <input type="checkbox" name="credit_id" value="0">
                       Not
                     </label>
                   </div>
 
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" name="credit" value="visa">
+                      <input type="checkbox" name="credit_id" value="1">
                       Visa
                     </label>
                   </div>
 
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" name="credit" value="MasterCard">
+                      <input type="checkbox" name="credit_id" value="2">
                       MasterCard
                     </label>
                   </div>
                                     <div class="checkbox">
                     <label>
-                      <input type="checkbox" name="credit" value="JCB">
+                      <input type="checkbox" name="credit_id" value="3">
                       JCB
                     </label>
                   </div>
 
                     <div class="checkbox">
                     <label>
-                      <input type="checkbox" name="credit" value="UnionPay">
+                      <input type="checkbox" name="credit_id" value="4">
                       UnionPay
                     </label>
                   </div>
@@ -154,7 +154,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-phone"></i>
                   </div>
-                  <input type="text" class="form-control" name="phone_info" data-inputmask='"mask": "(999) 999-9999"' data-mask>
+                  <input type="text" class="form-control" name="phone_number" data-inputmask='"mask": "(999) 999-9999"' data-mask>
                 </div>
                 <!-- /.input group -->
               </div>
@@ -166,17 +166,6 @@
                     <option>yes</option>
                     <option>no</option>
                   </select>
-                </div>
-
-            
-                <div class="col-md-6">
-                <i class="fa fa-bars">&nbsp;<label for="exampleInputPassword1">MENU ID</label></i>
-                  <input type="textarea" class="form-control" name="menu_id_info" id="exampleInputPassword1" placeholder="Menu ID">
-                </div>
-
-                <div class="col-md-6">
-                <i class="fa fa-camera">&nbsp;<label for="exampleInputPassword1">Photo ID</label></i>
-                  <input type="textarea" class="form-control" name="photo_id_info" id="exampleInputPassword1" placeholder="Photo ID">
                 </div>
                 </div>
   
