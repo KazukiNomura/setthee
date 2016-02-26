@@ -2,11 +2,10 @@
 --
 
 CREATE TABLE `t_report` (
-  `type` varchar(64) NOT NULL,
-  `menu_name` varchar(128) NOT NULL,
-  `description` text NOT NULL,
-  `photo` varchar(32) NOT NULL,
-  `report_id` int(11) NOT NULL DEFAULT '0',
+  `id_shop` varchar(64) NOT NULL,
+  `title` varchar(128) NOT NULL,
+  `visit_date` date NOT NULL,
+  `descriptiod` text NOT NULL,
   `del_flag` tinyint(4) NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
