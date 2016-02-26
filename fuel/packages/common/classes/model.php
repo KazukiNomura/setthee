@@ -58,7 +58,7 @@ class Model extends \Orm\Model
         $query->where($where);
         $query->set($vars);
         $result = $query->update();
-        $affectedRows = $query->affected_rows();
+        // $affectedRows = $query->affected_rows();
         return $result;
     }
 
