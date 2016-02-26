@@ -67,7 +67,44 @@ class Controller_Shop extends View_Admin
         $this->template->content = View::forge('shop/input', $data);
     }
 
-        /**
+    /**
+     * SHOP修正
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_edit()
+    {
+        $data = array();
+
+        $shop_id = \Input::get('id');
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_Shop::updateByPk($params['id'], $params);
+            $shop_id = $params['id'];
+        }
+
+        $shop_info = Model_T_Shop::find('first', array(
+            'where' => array(
+                'id' => $shop_id
+            )
+        ));
+        // self::debug($shop_info);
+        if (!empty($shop_info)) {
+            $data['shop_info'] = $shop_info;
+        }
+
+        // View
+        $this->template->title = $data['title'] = array('Edit SHOP');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/edit', $data);
+    }
+
+    /**
      * SHOP Menu
      *
      * @access  public
