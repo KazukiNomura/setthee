@@ -41,12 +41,6 @@ CREATE TABLE `t_shop` (
   `credit_id` int(11) NOT NULL,
   `phone_number` varchar(64) NOT NULL COMMENT 'infoの電話番号',
   `wi-fi` varchar(11) NOT NULL,
-  `menu_type` varchar(32) NOT NULL,
-  `menu_name` varchar(128) NOT NULL,
-  `menu_description` text NOT NULL,
-  `menu_photo` varchar(128) NOT NULL,
-  `photo_type_id` int(11) NOT NULL,
-  `photo_img` varchar(128) NOT NULL,
   `del_flag` tinyint(4) NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL

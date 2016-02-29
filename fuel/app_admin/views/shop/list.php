@@ -9,6 +9,7 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
+                　<th>revision</th>
                   <th>ID</th>
                   <th>SHOP Name</th>
                   <th>Genre</th>
@@ -20,6 +21,7 @@
                 </thead>
                 <tbody>
                 <tr>
+                  <th><a href="#"><i class="fa fa-wrench"></i></a></th>
                   <td><a href="#">34839</a></td>
                   <td>
                   <a href="#">Spiced pork with green mango</a>
@@ -31,6 +33,7 @@
                   <td><a href="#"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
                 </tr>
                 <tr>
+                <th><a href="#"><i class="fa fa-wrench"></i></a></th>
                   <td><a href="#">98780</a></td>
                   <td><a href="#">Crisp eschalot and dried shrimp relish (balachaung)</a>
                   </td>
