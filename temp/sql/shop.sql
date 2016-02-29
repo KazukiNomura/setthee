@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `t_shop` (
   `id` int(11) NOT NULL,
   `shop_name` varchar(128) NOT NULL,
+  `region` int(11) NOT NULL,
   `address` varchar(128) NOT NULL,
   `phone` varchar(32) NOT NULL,
   `coupon_icon` varchar(128) NOT NULL,

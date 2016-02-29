@@ -8,6 +8,7 @@ class Model_T_Shop extends Model
     protected static $_properties = array(
         'id',
         'shop_name',
+        'region',
         'address',
         'phone',
         'coupon_icon',

@@ -14,6 +14,25 @@
                 </div>
                 <div class="col-md-6">
                    <i class="fa fa-cab">&nbsp;<label for="exampleInputPassword1">Address</label></i>
+
+                  <p>
+                  <select multiple class="form-control" name="region">
+                    <option>Kachin State</option>
+                    <option>Kayah State</option>
+                    <option>Kayin State</option>
+                    <option>Chin State</option>
+                    <option>Sagaing Region</option>
+                    <option>Tanintharyi Region</option>
+                    <option>Bago Region</option>
+                    <option>Magway Region</option>
+                    <option>Mandalay Region</option>
+                    <option>Mon State</option>
+                    <option>Yangon Region</option>
+                    <option>Shan State</option>
+                    <option>Ayeyarwady Region</option>
+                  </select>
+                  </p>
+
                   <input type="textarea" name="address" class="form-control" id="exampleInputPassword1" placeholder="Shop address">
                 </div>
 
