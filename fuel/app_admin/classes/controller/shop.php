@@ -24,6 +24,7 @@ use Controller\View_Admin;
 // Model
 use ERS\Common\Model;
 use ERS\Common\Model\Model_T_Shop;
+use ERS\Common\Model\Model_T_Menu;
 
 class Controller_Shop extends View_Admin
 {
@@ -104,7 +105,7 @@ class Controller_Shop extends View_Admin
         $this->template->content = View::forge('shop/edit', $data);
     }
 
-    /**
+        /**
      * SHOP Menu
      *
      * @access  public
@@ -114,14 +115,25 @@ class Controller_Shop extends View_Admin
     {
         $data = array();
 
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_Menu::insert($params);
+        }        
+
         // View
         $this->template->title = $data['title'] = array('Shop Menu');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('shop/menu', $data);
     }
 
+
+
             /**
-     * SHOP Menu
+     * SHOP Photo
      *
      * @access  public
      * @return  Response
