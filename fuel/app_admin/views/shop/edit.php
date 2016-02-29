@@ -75,11 +75,14 @@
                 <div class="col-md-6">
                   <i class="fa fa-users">&nbsp;<label>Genre</label></i>
                   <select multiple class="form-control" name="genre_id" value="<?=$shop_info['genre_id'];?>">
-                    <option>Myanmar Food</option>
-                    <option>Japanese Food</option>
-                    <option>Italian Food</option>
-                    <option>Vietnam Food</option>
-                    <option>Thailand Food</option>
+                    <?php foreach ($master_info['genre'] as $master_id => $master_value): ?>
+                      <?php if ($master_id == $shop_info['genre_id']): ?>
+                        <?php $master_selected = 'selected="selected"'; ?>
+                      <?php else: ?>
+                        <?php $master_selected = ''; ?>
+                      <?php endif; ?>
+                      <option value="<?=$master_id;?>" <?=$master_selected;?>><?=$master_value;?></option>
+                    <?php endforeach; ?>
                   </select>
                 </div>
                 <!-- /Select multiple-->

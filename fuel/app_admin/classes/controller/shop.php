@@ -99,6 +99,10 @@ class Controller_Shop extends View_Admin
             $data['shop_info'] = $shop_info;
         }
 
+        // マスター取得
+        $data['master_info'] = \Config::get('master.shop');
+        // self::debug($data['master_info']);
+
         // View
         $this->template->title = $data['title'] = array('Edit SHOP');
         $this->template->auth  = $this->auth;
