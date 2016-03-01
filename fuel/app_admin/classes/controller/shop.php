@@ -25,6 +25,7 @@ use Controller\View_Admin;
 use ERS\Common\Model;
 use ERS\Common\Model\Model_T_Shop;
 use ERS\Common\Model\Model_T_Menu;
+use ERS\Common\Model\Model_T_Photo;
 
 class Controller_Shop extends View_Admin
 {
@@ -183,9 +184,57 @@ class Controller_Shop extends View_Admin
     {
         $data = array();
 
+                // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_Photo::insert($params);
+        }   
+
         // View
         $this->template->title = $data['title'] = array('Shop Photo');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('shop/photo', $data);
-    }   
+    }  
+
+          /**
+     * PHOTO修正
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_editphoto()
+    {
+        $data = array();
+
+        $photo_id = \Input::get('id');
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_Photo::updateByPk($params['id'], $params);
+            $photo_id = $params['id'];
+        }
+
+        $photo_info = Model_T_Photo::find('first', array(
+            'where' => array(
+                'id' => $photo_id
+            )
+        ));
+        //self::debug($menu_info);
+        if (!empty($photo_info)) {
+            $data['photo_info'] = $photo_info;
+        }
+
+        // View
+        $this->template->title = $data['title'] = array('Edit PHOTO');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/editphoto', $data);
+    }
+
+
+
 }
