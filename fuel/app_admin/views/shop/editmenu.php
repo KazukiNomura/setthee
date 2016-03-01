@@ -9,7 +9,7 @@
             <!-- /.box-header -->
 
             <?php echo Form::open(array('method' => 'post')); ?>
-            <input type="hidden" name="id" value="<?=$menu_info['id_menu'];?>"
+            <input type="hidden" name="id" value="<?=$menu_info['id'];?>"
             <br>
             <div class="box-body">
               <form role="form">

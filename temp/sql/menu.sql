@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2016 年 2 月 29 日 09:18
+-- Generation Time: 2016 年 3 月 01 日 04:45
 -- サーバのバージョン： 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `t_menu` (
-  `id_menu` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `menu_type` varchar(32) NOT NULL,
   `menu_name` varchar(128) NOT NULL,
   `description` text NOT NULL,
@@ -39,14 +39,14 @@ CREATE TABLE `t_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Indexes for dumped tables
---
+-- テーブルのデータのダンプ `t_menu`
+
 
 --
 -- Indexes for table `t_menu`
 --
 ALTER TABLE `t_menu`
-  ADD PRIMARY KEY (`id_menu`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -56,7 +56,7 @@ ALTER TABLE `t_menu`
 -- AUTO_INCREMENT for table `t_menu`
 --
 ALTER TABLE `t_menu`
-  MODIFY `id_menu` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

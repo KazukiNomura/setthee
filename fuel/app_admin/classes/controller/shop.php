@@ -134,6 +134,43 @@ class Controller_Shop extends View_Admin
         $this->template->content = View::forge('shop/menu', $data);
     }
 
+      /**
+     * MENU修正
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_editmenu()
+    {
+        $data = array();
+
+        $menu_id = \Input::get('id');
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_Menu::updateByPk($params['id'], $params);
+            $menu_id = $params['id'];
+        }
+
+        $menu_info = Model_T_Menu::find('first', array(
+            'where' => array(
+                'id' => $menu_id
+            )
+        ));
+        //self::debug($menu_info);
+        if (!empty($menu_info)) {
+            $data['menu_info'] = $menu_info;
+        }
+
+        // View
+        $this->template->title = $data['title'] = array('Edit MENU');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/editmenu', $data);
+    }
+
 
 
             /**

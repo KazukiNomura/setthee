@@ -6,7 +6,7 @@ use ERS\Common\Model;
 class Model_T_Menu extends Model
 {
     protected static $_properties = array(
-        'id_menu',
+        'id',
         'menu_type',
         'menu_name',
         'description',
@@ -29,5 +29,5 @@ class Model_T_Menu extends Model
     );
 
     protected static $_table_name = 't_menu';
-    protected static $_primary_key = array('id_menu');
+    protected static $_primary_key = array('id');
 }
