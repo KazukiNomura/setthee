@@ -9,26 +9,28 @@
 
             <!-- form start -->
             <?php echo Form::open(array('method' => 'post')); ?>
-            <input type="hidden" name="id" value="<?=$shop_info['id'];?>"
+            <input type="hidden" name="id" value="<?=$shop_info['id'];?>">
             <br>
               <div class="box-body">
                 <div class="col-md-6">
                   <i class="fa fa-cutlery">&nbsp;<label for="exampleInputEmail1">Shop name</label></i>
                   <input type="textarea" name = "shop_name" class="form-control" value="<?=$shop_info['shop_name'];?>"  id="exampleInputEmail1" placeholder="shop name">
                 </div>
+
                 <div class="col-md-6">
+                <br>
                    <i class="fa fa-cab">&nbsp;<label for="exampleInputPassword1">Address</label></i>
                 
                 <!--  <region チェックボックス> -->
-                  <div class="checkbox" name="region" value="<?=$shop_info['region'];?>">
+                  <div class="radio" name="region" value="<?=$shop_info['region'];?>">
                     <?php foreach ($master_info['region'] as $master_id => $master_value): ?>
                       <?php if ($master_id == $shop_info['region']): ?>
-                        <?php $master_checkboxed = 'checkboxed="checkboxed"'; ?>
+                        <?php $master_checkboxed = 'radioed="radioed"'; ?>
                       <?php else: ?>
                         <?php $master_checkboxed = ''; ?>
                       <?php endif; ?>
                       <label>
-                      <input type="checkbox" name="region" value="<?=$master_id;?>" <?=$master_checkboxed;?>><?=$master_value;?>
+                      <input type="radio" name="region" value="<?=$master_id;?>" <?=$master_checkboxed;?>><?=$master_value;?>
                       </label>
                     <?php endforeach; ?>
                   </div>

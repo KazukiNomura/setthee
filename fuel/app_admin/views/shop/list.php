@@ -5,6 +5,7 @@
             <!-- /.box-header -->
 
 
+           <!--  <tabel name> -->
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
@@ -19,7 +20,11 @@
                   <th>Photo</th>
                 </tr>
                 </thead>
+                
+                <!--  <tabel name> -->
+
                 <tbody>
+                <!-- <tabel list 1>  -->
                 <tr>
                   <th><a href="#"><i class="fa fa-wrench"></i></a></th>
                   <td><a href="#">34839</a></td>
@@ -32,6 +37,11 @@
                   <td><a href="#"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
                   <td><a href="#"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
                 </tr>
+                <!-- <tabel list 1>  -->
+
+
+
+                <!-- <tabel list 2>  -->
                 <tr>
                 <th><a href="#"><i class="fa fa-wrench"></i></a></th>
                   <td><a href="#">98780</a></td>
@@ -43,9 +53,12 @@
                   <td><a href="#"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
                   <td><a href="#"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
                 </tr>
+                <!-- <tabel list 2>  -->
+
 
                 </tfoot>
               </table>
+            <!-- <ページング> -->
             <div class="box-footer clearfix">
               <ul class="pagination pagination-sm no-margin pull-right">
                 <li><a href="#">&laquo;</a></li>
@@ -57,6 +70,8 @@
                 <li><a href="#">&raquo;</a></li>
               </ul>
             </div>
+            <!-- <ページング> -->
+
             </div>
             <!-- /.box-body -->
           </div>
