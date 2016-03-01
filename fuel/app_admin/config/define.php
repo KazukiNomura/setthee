@@ -13,8 +13,20 @@ return array(
 	'master' => array(
 		'shop' => array(
 			// 住所マスター
-			'address' => array(
-				1 => '',
+			'region' => array(
+				1 => 'Kachin State',
+				2 => 'Kayah State',
+				3 => 'Kayin State',
+				4 => 'Chin State',
+				5 => 'Sagaing Region',
+				6 => 'Tanintharyi Region',
+				7 => 'Bago Region',
+				8 => 'Magway Region',
+				9 => 'Mandalay Region',
+				10 => 'Mon State',
+				11 => 'Yangon Region',
+				12 => 'Shan State',
+				13 => 'Ayeyarwady Region',
 			),
 
 			// ジャンルマスター
@@ -25,6 +37,18 @@ return array(
 				4 => 'Vietnam Food',
 				5 => 'Thailand Food',
 			),
+			
+			//クレジットマスター		
+			'credit_id' => array(
+				1 => 'Not',
+				2 => 'Visa',
+				3 => 'MasterCard',
+				4 => 'JCB',
+				5 => 'UnionPay',
+				),
+
 		),
 	),
 );
+
+
