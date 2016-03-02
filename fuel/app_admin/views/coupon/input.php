@@ -1,10 +1,7 @@
     <!-- Main content -->
     <?php echo Form::open(array('method' => 'post')); ?>
       <section class="content">
-					    <div class="form-group">
-                  <label for="exampleInputEmail1">Shop ID</label>
-                  <input type="text" class="form-control" name="id" id="exampleInputEmail1" placeholder="Shop ID">
-              </div>
+
               <div class="form-group">
                   <label for="exampleInputEmail1">Coupon Title</label>
                   <input type="text" class="form-control" name="title" id="exampleInputEmail1" placeholder="Coupon Title">
@@ -14,24 +11,12 @@
                   <input type="file" name="thumbnail" id="exampleInputFile">
               </div>
               
-              <div class="box">
-              <div class="box-header">
-              <h3 class="box-title">Coupon Description
-              </h3>
+              
 
-              <div class="pull-right box-tools">
-                <button type="button" class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-                  <i class="fa fa-minus"></i></button>
-                <button type="button" class="btn btn-default btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove">
-                  <i class="fa fa-times"></i></button>
-              </div>
-            </div>
-
-            <div class="box-body pad">
-              <form>
-                <textarea class="textarea" name="description" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-              </form>
-            </div>
+                    <div class="form-group">
+                  <label>Coupon Description</label>
+                  <textarea class="form-control" rows="3" placeholder="Enter ..." name="description"> </textarea>
+                </div>
             
             <div class="box box-success">
             <div class="box-header with-border">
@@ -47,7 +32,7 @@
               <input class="form-control input-sm" type="text" name="Conditions4" placeholder="Conditions4">
             </div>
           </div>  
-          </div>
+         
 
           <div class="form-group">
             <label>Expiration date(Day)</label>
@@ -60,7 +45,7 @@
               </div>
           
           <div class="box-footer">
-            <input type="submit" name="submit" id="submit" class="btn btn-primary" value="Submit"/>
+            <input type="submit" id="submit" class="btn btn-primary" value="Submit"/>
           </div>
       </section>
     <?php echo Form::close(); ?>

@@ -20,10 +20,11 @@
                   <th>Photo</th>
                 </tr>
                 </thead>
-                
+                <tbody>
                 <!--  <tabel name> -->
 
-                <tbody>
+
+
                 <!-- <tabel list 1>  -->
                 <tr>
                   <th><a href="#"><i class="fa fa-wrench"></i></a></th>

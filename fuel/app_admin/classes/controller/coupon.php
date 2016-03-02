@@ -55,7 +55,7 @@ class Controller_Coupon extends View_Admin
 
         if (\Input::post()) {
             $params = \Input::post();
-            // self::debug($params);
+            self::debug($params);
 
             Model_T_Coupon::insert($params);
         }   

@@ -56,7 +56,7 @@ class Controller_Report extends View_Admin
                         // 情報登録 ---------------------------------
         if (\Input::post()) {
             $params = \Input::post();
-            // self::debug($params);
+             self::debug($params);
 
             Model_T_Report::insert($params);
         }   
