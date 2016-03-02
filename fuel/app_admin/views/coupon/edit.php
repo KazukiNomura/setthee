@@ -1,5 +1,6 @@
     <!-- Main content -->
     <?php echo Form::open(array('method' => 'post')); ?>
+     <input type="hidden" name="id" value="<?=$coupon_info['id'];?>">
       <section class="content">
 
               <div class="form-group">

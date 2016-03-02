@@ -28,7 +28,7 @@ use ERS\Common\Model\Model_T_Coupon;
 class Controller_Coupon extends View_Admin
 {
     /**
-     * Reportリスト
+     * couponリスト
      *
      * @access  public
      * @return  Response
@@ -44,7 +44,7 @@ class Controller_Coupon extends View_Admin
     }
 
     /**
-     * Report作成
+     * coupon作成
      *
      * @access  public
      * @return  Response
@@ -75,7 +75,7 @@ class Controller_Coupon extends View_Admin
         // 情報登録 ---------------------------------
         if (\Input::post()) {
             $params = \Input::post();
-            // self::debug($params);
+             self::debug($params);
 
             Model_T_Coupon::updateByPk($params['id'], $params);
             $coupon_id = $params['id'];
