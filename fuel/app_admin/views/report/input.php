@@ -28,7 +28,7 @@
 
                  <div class="form-group">
                   <label>Report Textarea</label>
-                  <textarea class="form-control" rows="3" placeholder="Enter ..." name="description"> </textarea>
+                  <textarea class="form-control" rows="3" style="padding-top:200px" placeholder="Enter ..." name="description"> </textarea>
                 </div>
 
                <div class="box-footer">
