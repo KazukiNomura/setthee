@@ -6,10 +6,10 @@ use ERS\Common\Model;
 class Model_T_Report extends Model
 {
     protected static $_properties = array(
-        'id_shop',
+        'id',
         'title',
         'visit_date',
-        'descriptiod',
+        'description',
         'del_flag',
         'created_at',
         'updated_at',

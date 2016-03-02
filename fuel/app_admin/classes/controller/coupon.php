@@ -23,6 +23,7 @@ use Controller\View_Admin;
 
 // Model
 use ERS\Common\Model;
+use ERS\Common\Model\Model_T_Coupon;
 
 class Controller_Coupon extends View_Admin
 {
@@ -51,6 +52,13 @@ class Controller_Coupon extends View_Admin
     public function action_input()
     {
         $data = array();
+
+        if (\Input::post()) {
+            $params = \Input::post();
+            // self::debug($params);
+
+            Model_T_Coupon::insert($params);
+        }   
 
         // View
         $this->template->title = $data['title'] = array('Coupon form');

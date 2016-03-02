@@ -1,6 +1,6 @@
     <!-- Main content -->
     <section class="content">
-
+    <?php echo Form::open(array('method' => 'post')); ?>
 
 					    <div class="form-group">
                   <label for="exampleInputEmail1">Shop ID</label>
@@ -77,7 +77,10 @@
               </div>
         </div>
         <!-- /.col-->
+         <form>
+     <?php echo Form::close(); ?>
       </div>
+
       <!-- ./row -->
     </section>
     <!-- /.content -->

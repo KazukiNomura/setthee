@@ -7,14 +7,14 @@ class Model_T_Coupon extends Model
 {
     protected static $_properties = array(
         'id',
-        'coupon_title',
+        'title',
         'thumbnail',
         'description',
         'conditions1',
         'conditions2',
         'conditions3',
         'conditions4',
-        'expiration_date',
+        'expirationdate',
         'del_flag',
         'created_at',
         'updated_at',

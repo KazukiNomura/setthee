@@ -5,7 +5,7 @@
 
 					    <div class="form-group">
                   <label for="exampleInputEmail1">Shop ID</label>
-                  <input type="text" class="form-control" name="id_shop" id="exampleInputEmail1" placeholder="Shop ID">
+                  <input type="text" class="form-control" name="id" id="exampleInputEmail1" placeholder="Shop ID">
                 </div>
 
                     <div class="form-group">
@@ -41,7 +41,7 @@
             <!-- /.box-header -->
             <div class="box-body pad">
               
-                <textarea class="textarea" placeholder="Place some text here" name="descriptiod" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                <textarea class="textarea" placeholder="Place some text here" name="description" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
             
             </div>
           </div>
