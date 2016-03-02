@@ -53,7 +53,7 @@ class Controller_Report extends View_Admin
     {
         $data = array();
 
-                        // 情報登録 ---------------------------------
+        // 情報登録 ---------------------------------
         if (\Input::post()) {
             $params = \Input::post();
              self::debug($params);
@@ -66,4 +66,35 @@ class Controller_Report extends View_Admin
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('report/input', $data);
     }	
+
+    public function action_edit()
+    {
+        $data = array();
+
+        $report_id = \Input::get('id');
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            // self::debug($params);
+
+            Model_T_Report::updateByPk($params['id'], $params);
+            $report_id = $params['id'];
+        }
+
+        $report_info = Model_T_Report::find('first', array(
+            'where' => array(
+                'id' => $report_id
+            )
+        ));
+        // self::debug($report_info);
+        if (!empty($report_info)) {
+            $data['report_info'] = $report_info;
+        }
+
+        // View
+        $this->template->title = $data['title'] = array('Edit REPORT');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('report/edit', $data);
+    }
 }

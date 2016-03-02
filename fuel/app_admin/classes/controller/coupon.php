@@ -65,4 +65,35 @@ class Controller_Coupon extends View_Admin
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('coupon/input', $data);
     }	
+
+    public function action_edit()
+    {
+        $data = array();
+
+        $coupon_id = \Input::get('id');
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            // self::debug($params);
+
+            Model_T_Coupon::updateByPk($params['id'], $params);
+            $coupon_id = $params['id'];
+        }
+
+        $coupon_info = Model_T_Coupon::find('first', array(
+            'where' => array(
+                'id' => $coupon_id
+            )
+        ));
+        // self::debug($coupon_info);
+        if (!empty($coupon_info)) {
+            $data['coupon_info'] = $coupon_info;
+        }
+
+        // View
+        $this->template->title = $data['title'] = array('Edit COUPON');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('coupon/edit', $data);
+    }
 }
