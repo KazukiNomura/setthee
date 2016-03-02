@@ -61,7 +61,7 @@ class Controller_Coupon extends View_Admin
         }   
 
         // View
-        $this->template->title = $data['title'] = array('Coupon form');
+        $this->template->title = $data['title'] = array('Coupon Form');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('coupon/input', $data);
     }	

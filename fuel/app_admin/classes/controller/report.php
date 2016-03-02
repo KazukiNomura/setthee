@@ -62,7 +62,7 @@ class Controller_Report extends View_Admin
         }   
 
         // View
-        $this->template->title = $data['title'] = array('Report form');
+        $this->template->title = $data['title'] = array('Report Form');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('report/input', $data);
     }	

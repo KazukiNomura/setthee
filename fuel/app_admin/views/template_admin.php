@@ -330,7 +330,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="/report/list"><i class="fa fa-circle-o"></i>Report List</a></li>
-            <li><a href="/report/input"><i class="fa fa-circle-o"></i>Report from</a></li>
+            <li><a href="/report/input"><i class="fa fa-circle-o"></i>Report Form</a></li>
           </ul>
         </li>
 
@@ -342,7 +342,7 @@
           </a>
         <ul class="treeview-menu">
             <li><a href="/coupon/list"><i class="fa fa-circle-o"></i>Coupon List</a></li>
-            <li><a href="/coupon/input.php"><i class="fa fa-circle-o"></i>Coupon form</a></li>
+            <li><a href="/coupon/input.php"><i class="fa fa-circle-o"></i>Coupon Form</a></li>
           </a>
         </ul>
         </li>
