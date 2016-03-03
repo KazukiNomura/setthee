@@ -354,16 +354,16 @@
 
           <li class="treeview">
           <a href="#">
-            <i class="fa fa-cutlery"></i> <span>TOP</span> <i class="fa fa-angle-left pull-right"></i>
+            <i class="fa fa-wrench"></i> <span>TOP</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="/shop/list"><i class="fa fa-circle-o"></i>TOP Edit</a></li>
+            <li class="active"><a href="/top/top"><i class="fa fa-circle-o"></i>TOP Edit</a></li>
           </ul>
         </li>
 
           <li class="treeview">
           <a href="#">
-            <i class="fa fa-cutlery"></i> <span>Header Nav</span> <i class="fa fa-angle-left pull-right"></i>
+            <i class="fa fa-cogs"></i> <span>Header Nav</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="/headernav/news"><i class="fa fa-circle-o"></i>News form</a></li>
