@@ -3,10 +3,6 @@
     <section class="content">
     <?php echo Form::open(array('method' => 'post')); ?>
 
-					    <div class="form-group">
-                  <label for="exampleInputEmail1">Shop ID</label>
-                  <input type="text" class="form-control" name="id" id="exampleInputEmail1" placeholder="Shop ID">
-                </div>
 
                     <div class="form-group">
                   <label for="exampleInputEmail1">Report Title</label>
