@@ -347,6 +347,34 @@
         </ul>
         </li>
 
+        <!--  ↑ SHOP登録 -->
+          <li class="header">TOP NAVIGATION</li>
+        <!-- ↓　TOP編集/header nav編集 -->
+
+
+          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-cutlery"></i> <span>TOP</span> <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="/shop/list"><i class="fa fa-circle-o"></i>TOP Edit</a></li>
+          </ul>
+        </li>
+
+          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-cutlery"></i> <span>Header Nav</span> <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="/headernav/news"><i class="fa fa-circle-o"></i>News form</a></li>
+            <li><a href="/headernav/newslist"><i class="fa fa-circle-o"></i>New list</a></li>
+            <li><a href="/headernav/and"><i class="fa fa-circle-o"></i>Set Thee And?</a></li>
+            <li><a href="/headernav/fqform"><i class="fa fa-circle-o"></i>F and Q form</a></li>
+            <li><a href="/headernav/fqlist"><i class="fa fa-circle-o"></i>F and Q list</a></li>
+            <li><a href="/headernav/contact"><i class="fa fa-circle-o"></i>Contact us</a></li>
+          </ul>
+        </li>
+
 
         <li class="treeview">
           <!-- <a href="#">
