@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `t_news` (
   `id` int(11) NOT NULL,
-  `title` date NOT NULL,
+  `title` varchar(255) NOT NULL,
   `time` date NOT NULL,
   `textarea` text NOT NULL,
   `del_flag` tinyint(4) NOT NULL,
