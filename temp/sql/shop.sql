@@ -35,7 +35,7 @@ CREATE TABLE `t_shop` (
   `coupon_icon` varchar(128) NOT NULL,
   `report_icon` varchar(128) NOT NULL,
   `genre_id` int(11) NOT NULL,
-  `header_img` int(128) NOT NULL,
+  `header_img` varchar(255) NOT NULL,
   `address_info` varchar(128) NOT NULL,
   `businesshours` varchar(64) NOT NULL,
   `price` tinyint(64) NOT NULL,
