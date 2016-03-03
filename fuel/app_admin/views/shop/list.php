@@ -23,38 +23,22 @@
                 <tbody>
                 <!--  <tabel name> -->
 
-
-
+          <?php foreach ($list as $info): ?>
                 <!-- <tabel list 1>  -->
                 <tr>
                   <th><a href="#"><i class="fa fa-wrench"></i></a></th>
-                  <td><a href="#">34839</a></td>
+                  <td><a href="#"><?=$info['id'];?></a></td>
                   <td>
-                  <a href="#">Spiced pork with green mango</a>
+                  <a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></a>
                   </td>
-                  <td>Myanmar Food</td>
+                  <td><?=$master_info['genre'][$info['genre_id']];?></td>
                   <td> <a href="#">yes</a></td>
                   <td><a href="#">yes</a></td>
-                  <td><a href="#"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
-                  <td><a href="#"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
+                  <td><a href="/shop/menu?shop_id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
+                  <td><a href="/shop/photo?shop_id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
                 </tr>
                 <!-- <tabel list 1>  -->
-
-
-
-                <!-- <tabel list 2>  -->
-                <tr>
-                <th><a href="#"><i class="fa fa-wrench"></i></a></th>
-                  <td><a href="#">98780</a></td>
-                  <td><a href="#">Crisp eschalot and dried shrimp relish (balachaung)</a>
-                  </td>
-                  <td>Italian Food</td>
-                  <td><a href="#">yes</a></td>
-                  <td><a href="#">no</a></td>
-                  <td><a href="#"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
-                  <td><a href="#"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
-                </tr>
-                <!-- <tabel list 2>  -->
+          <?php endforeach; ?>
 
 
                 </tfoot>
