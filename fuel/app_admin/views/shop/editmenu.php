@@ -9,7 +9,7 @@
             <!-- /.box-header -->
 
             <?php echo Form::open(array('method' => 'post')); ?>
-            <input type="hidden" name="id" value="<?=$menu_info['id'];?>"
+            <input type="hidden" name="id" value="<?=$menu_info['id'];?>">
             <br>
             <div class="box-body">
               <form role="form">
@@ -18,7 +18,7 @@
                 <!-- Menu Type -->
                   <div class="col-md-6">
                   <label>Type</label>
-                  <select class="form-control" name = "menu_type" value="<?=$menu_info['menu_type'];?>"
+                  <select class="form-control" name = "menu_type" value="<?=$menu_info['menu_type'];?>">
                     <option>Food</option>
                     <option>Drink</option>
                   </select>

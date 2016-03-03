@@ -47,6 +47,43 @@ class Controller_Headernav extends View_Admin
     }
 
         /**
+     * News修正
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_edit()
+    {
+        $data = array();
+
+        $shop_id = \Input::get('id');
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_News::updateByPk($params['id'], $params);
+            $news_id = $params['id'];
+        }
+
+        $shop_info = Model_T_News::find('first', array(
+            'where' => array(
+                'id' => $news_id
+            )
+        ));
+        // self::debug($shop_info);
+        if (!empty($news_info)) {
+            $data['news_info'] = $news_info;
+        }
+
+        // View
+        $this->template->title = $data['title'] = array('Edit News');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('headernav/edit', $data);
+    }
+
+        /**
      * News list
      *
      * @access  public
