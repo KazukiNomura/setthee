@@ -25,25 +25,23 @@
                   <div class="radio" name="region" value="<?=$shop_info['region'];?>">
                     <?php foreach ($master_info['region'] as $master_id => $master_value): ?>
                       <?php if ($master_id == $shop_info['region']): ?>
-                        <?php $master_checkboxed = 'radioed="radioed"'; ?>
+                        <?php $master_radio = 'radioed="radioed"'; ?>
                       <?php else: ?>
-                        <?php $master_checkboxed = ''; ?>
+                        <?php $master_radio = ''; ?>
                       <?php endif; ?>
                       <label>
-                      <input type="radio" name="region" value="<?=$master_id;?>" <?=$master_checkboxed;?>><?=$master_value;?>
+                      <input type="radio" name="region" <?= $shop_info['region']  ? 'checked' : '' ?><?=$master_radio;?>><?=$master_value;?>
                       </label>
                     <?php endforeach; ?>
                   </div>
                    <!--  <region チェックボックス> -->
-              
                   
                   <input type="textarea" name="address" value="<?=$shop_info['address'];?>" class="form-control" id="exampleInputPassword1" placeholder="Shop address">
                 </div>
 
-  
                <div class="col-md-6">
                <br>
-                <i class="fa fa-phone">&nbsp;<label>phone</label></i>
+                <i class="fa fa-phone">&nbsp;<label>Phone</label></i>
 
                 <div class="input-group">
                   <div class="input-group-addon">
@@ -51,7 +49,6 @@
                   </div>
                   <input type="text" name="phone" value="<?=$shop_info['phone'];?>" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
                 </div>
-                <!-- /.input group -->
               </div>
             
                   <div class="col-md-6">
@@ -70,8 +67,6 @@
                     <option>OFF</option>
                   </select>
                 </div>
-
-          
 
                 <!-- genre チェックボックス-->
                 <div class="col-md-6">
@@ -92,24 +87,18 @@
                 </div>
                 <!-- genre チェックボックス-->
 
-
-                <div class="form-group">
+                <div class="col-md-6">           
                   <i class="fa fa-camera">&nbsp;<label for="exampleInputFile">Main visual</label></i>
                   <input type="file" id="exampleInputFile" name="header_img" value="<?=$shop_info['header_img'];?>">
-
                 </div>
-
-                <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-
               </div>
 
-              </div>
-              <!-- /.box-body -->
+              <p align="center">
+                <button type="submit" class="btn btn-primary" style="margin:15px">Submit</button>
+              </p>    
+              </div>    
 
 <!-- Shop_Header -->
-
 
 <!-- Shop Info -->
  <div class="box box-primary">
@@ -125,24 +114,18 @@
                   <input type="textarea" class="form-control" name="address_info" value="<?=$shop_info['address_info'];?>" id="exampleInputEmail1" placeholder="Address">
                 </div>
 
-                
-
                 <div class="col-md-6">
                    <i class="fa fa-clock-o">&nbsp;<label for="exampleInputPassword1">Business hours</label></i>
                   <input type="textarea" class="form-control" value="<?=$shop_info['businesshours'];?>" name="businesshours" id="exampleInputPassword1" placeholder="Business hours">
                 </div>
 
-
                <div class="col-md-6">
                <br>
                   <i class="fa fa-money">&nbsp;<label for="exampleInputPassword1">Average price</label></i>
                   <input type="textarea" class="form-control" name="price" value="<?=$shop_info['price'];?>"  id="exampleInputPassword1" placeholder="Average price">
-                </div>
+                </div>      
 
-                 
-
-                  <!--  <credit チェックボックス> -->
-
+                <!--  <credit チェックボックス> -->
                 <div class="col-md-6">
                 <br>
                   <i class="fa fa-users">&nbsp;<label>Credit</label></i>
@@ -161,11 +144,9 @@
                 </div>
                <!--  <credit チェックボックス> -->
 
-
                 <div class="col-md-6">
                 <br>
-                <i class="fa fa-phone">&nbsp;<label>phone</label></i>
-
+                <i class="fa fa-phone">&nbsp;<label>Phone</label></i>
                 <div class="input-group">
                   <div class="input-group-addon">
                     <i class="fa fa-phone"></i>
@@ -175,25 +156,20 @@
                 <!-- /.input group -->
               </div>
 
-
                   <div class="col-md-6">
                   <br>
-                  <i class="fa fa-wifi">&nbsp;<label>wi-fi</label></i>
+                  <i class="fa fa-wifi">&nbsp;<label>Wi-fi</label></i>
                   <select class="form-control" name="wi-fi" value="<?=$shop_info['wi-fi'];?>">
                     <option>yes</option>
                     <option>no</option>
                   </select>
                 </div>
                 </div>
-  
-<div class="form-group">
-              <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
 
-                          
-            </form>
-            <?php echo Form::close(); ?>
-
-          </div>
+              <p align="center">
+                <button type="submit" class="btn btn-primary" style="margin:15px">Submit</button>
+              </p>                        
+             </form>                       
+</div>
+          <?php echo Form::close(); ?>
 <!-- Shop Info -->

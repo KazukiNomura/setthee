@@ -19,34 +19,30 @@
                 <div class="col-md-6">
                 <br>
                    <i class="fa fa-cab">&nbsp;<label for="exampleInputPassword1">Address</label></i>
-
                 
                 <!--  <region ラジオボックス> -->
                   <div class="radio" name="region">
                     <?php foreach($master_info['region'] as $master_id => $master_value):?>
                       <label>
-                      <input type="radio" name="region" value="<?//=$master_id;?>"><?//=$master_value;?>
+                      <input type="radio" name="region" value="<?=$master_id;?>"><?=$master_value;?>
                       </label>
                     <?php endforeach;?>
                   </div>
                 <!--  <region ラジオボックス> -->
-              
                   
-                  <input type="textarea" name="address" class="form-control" id="exampleInputPassword1" placeholder="Shop address">
+                 <input type="textarea" name="address" class="form-control" id="exampleInputPassword1" placeholder="Shop address">
                 </div>
 
   
                <div class="col-md-6">
                <br>
-                <i class="fa fa-phone">&nbsp;<label>phone</label></i>
-
+                <i class="fa fa-phone">&nbsp;<label>Phone</label></i>
                 <div class="input-group">
                   <div class="input-group-addon">
                     <i class="fa fa-phone"></i>
                   </div>
                   <input type="text" name="phone" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
                 </div>
-                <!-- /.input group -->
               </div>
             
                   <div class="col-md-6">
@@ -65,31 +61,32 @@
                     <option>OFF</option>
                   </select>
                 </div>
-
           
-
+                <!-- genre チェックボックス-->
+                <div class="col-md-6">
+                <br>
+                  <i class="fa fa-users">&nbsp;<label>Genre</label></i>
+                  <div class="checkbox" name="genre_id">
+                    <?php foreach ($master_info['genre'] as $master_id => $master_value): ?>
+                      <label>
+                      <input type="checkbox" name="genre_id" value="<?=$master_id;?>"><?=$master_value;?>
+                      </label>
+                    <?php endforeach; ?>
+                  </div>
+                </div>
                 <!-- genre チェックボックス-->
 
-                <!-- genre チェックボックス-->
-
-
-                <div class="form-group">
+                <div class="col-md-6">           
                   <i class="fa fa-camera">&nbsp;<label for="exampleInputFile">Main visual</label></i>
                   <input type="file" id="exampleInputFile" name="header_img">
-
                 </div>
-
-                <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-
               </div>
-
+               <p align="center">
+                <button type="submit" class="btn btn-primary" style="margin:15px">Submit</button>
+              </p> 
               </div>
-              <!-- /.box-body -->
 
 <!-- Shop_Header -->
-
 
 <!-- Shop Info -->
  <div class="box box-primary">
@@ -104,9 +101,7 @@
                   <i class="fa fa-cab">&nbsp;<label for="exampleInputEmail1">Address</label></i>
                   <input type="textarea" class="form-control" name="address_info" id="exampleInputEmail1" placeholder="Address">
                 </div>
-
-                
-
+          
                 <div class="col-md-6">
                    <i class="fa fa-clock-o">&nbsp;<label for="exampleInputPassword1">Business hours</label></i>
                   <input type="textarea" class="form-control" name="businesshours" id="exampleInputPassword1" placeholder="Business hours">
@@ -119,15 +114,24 @@
                   <input type="textarea" class="form-control" name="price" id="exampleInputPassword1" placeholder="Average price">
                 </div>
 
-                 
-
-                  <!--  <credit チェックボックス> -->
-               <!--  <credit チェックボックス> -->
-
+                <!--  <credit チェックボックス> -->
 
                 <div class="col-md-6">
                 <br>
-                <i class="fa fa-phone">&nbsp;<label>phone</label></i>
+                  <i class="fa fa-users">&nbsp;<label>Credit</label></i>
+                  <div class="checkbox" name="credit_id">
+                    <?php foreach ($master_info['credit_id'] as $master_id => $master_value): ?>
+                      <label>
+                      <input type="checkbox" name="credit_id" value="<?=$master_id;?>"><?=$master_value;?>
+                      </label>
+                    <?php endforeach; ?>
+                  </div>
+                </div>
+               <!--  <credit チェックボックス> -->
+
+                <div class="col-md-6">
+                <br>
+                <i class="fa fa-phone">&nbsp;<label>Phone</label></i>
 
                 <div class="input-group">
                   <div class="input-group-addon">
@@ -138,25 +142,21 @@
                 <!-- /.input group -->
               </div>
 
-
                   <div class="col-md-6">
                   <br>
-                  <i class="fa fa-wifi">&nbsp;<label>wi-fi</label></i>
+                  <i class="fa fa-wifi">&nbsp;<label>Wi-fi</label></i>
                   <select class="form-control" name="wi-fi">
                     <option>yes</option>
                     <option>no</option>
                   </select>
                 </div>
                 </div>
-  
-<div class="form-group">
-              <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
 
-                          
-            </form>
-            <?php echo Form::close(); ?>
+              <p align="center">
+                <button type="submit" class="btn btn-primary" style="margin:15px">Submit</button>
+              </p>
+            </form>                       
+</div>
+          <?php echo Form::close(); ?>
 
-          </div>
 <!-- Shop Info -->

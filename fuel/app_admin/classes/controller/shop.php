@@ -63,6 +63,8 @@ class Controller_Shop extends View_Admin
             Model_T_Shop::insert($params);
         }        
 
+        $data['master_info'] = \Config::get('master.shop');
+
         // View
         $this->template->title = $data['title'] = array('New SHOP');
         $this->template->auth  = $this->auth;
