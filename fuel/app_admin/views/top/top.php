@@ -1,3 +1,4 @@
+          <?php echo Form::open(array('method' => 'post')); ?>
           <div class="box box-primary">
             <div class="box-header with-border">
               <h3 class="box-title">TOP Page</h3>
@@ -9,7 +10,7 @@
 
                 <div class="form-group">
                   <label for="exampleInputFile">Main Visual</label>
-                  <input type="file" id="exampleInputFile">
+                   <input type="file" id="exampleInputFile" name="header_img">
               </div>
 
           
@@ -21,7 +22,7 @@
             <div class="box-body">
               <div class="row">
                 <div class="col-xs-3">
-                  <input type="text" class="form-control" placeholder="id number">
+                  <input type="text" class="form-control" placeholder="id number" name="coupon_id">
                 </div>
 
               </div>
@@ -39,7 +40,7 @@
             <div class="box-body">
               <div class="row">
                 <div class="col-xs-3">
-                  <input type="text" class="form-control" placeholder="id number">
+                  <input type="text" class="form-control" placeholder="id number" name="report_id">
                 </div>
               </div>
             </div>
@@ -55,3 +56,4 @@
               </div>
             </form>
           </div>
+          <?php echo Form::close(); ?>

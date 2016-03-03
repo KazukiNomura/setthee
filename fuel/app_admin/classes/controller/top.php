@@ -23,6 +23,7 @@ use Controller\View_Admin;
 
 // Model
 use ERS\Common\Model;
+use ERS\Common\Model\Model_T_Top;
 
 class Controller_Top extends View_Admin
 {
@@ -36,7 +37,7 @@ class Controller_Top extends View_Admin
             $params = \Input::post();
              self::debug($params);
 
-            //Model_T_Top::insert($params);
+            Model_T_Top::insert($params);
         }   
 
         // View
