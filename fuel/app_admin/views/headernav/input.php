@@ -16,7 +16,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" class="form-control" name="visit_date" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                  <input type="text" class="form-control" name="time" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
                 </div>
                 <!-- /.input group -->
               </div>
@@ -24,7 +24,7 @@
 
                  <div class="form-group">
                   <label>News Textarea</label>
-                  <textarea class="form-control" rows="3" placeholder="Enter ..." name="description"> </textarea>
+                  <textarea class="form-control" rows="3" placeholder="Enter ..." name="textarea"> </textarea>
                 </div>
 
                <div class="box-footer">
