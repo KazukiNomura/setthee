@@ -2,7 +2,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">News Date</h3>
+              <h3 class="box-title">F and Q Date</h3>
 
               <div class="box-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -19,7 +19,7 @@
               <table class="table table-hover">
                 <tr>
                   <th>ID</th>
-                  <th>Title</th>
+                  <th>Question</th>
                   <th>Date</th>
                 </tr>
                 <tr>

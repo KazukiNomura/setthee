@@ -366,8 +366,8 @@
             <i class="fa fa-cogs"></i> <span>Header Nav</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="/news/input"><i class="fa fa-circle-o"></i>News form</a></li>
-            <li><a href="/news/list"><i class="fa fa-circle-o"></i>New list</a></li>
+            <li class="active"><a href="/headernav/input"><i class="fa fa-circle-o"></i>News form</a></li>
+            <li><a href="/headernav/list"><i class="fa fa-circle-o"></i>New list</a></li>
             <li><a href="/headernav/and"><i class="fa fa-circle-o"></i>Set Thee And?</a></li>
             <li><a href="/headernav/fqinput"><i class="fa fa-circle-o"></i>F and Q form</a></li>
             <li><a href="/headernav/fqlist"><i class="fa fa-circle-o"></i>F and Q list</a></li>
