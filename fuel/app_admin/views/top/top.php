@@ -21,10 +21,10 @@
             <div class="box-body">
               <div class="row">
                 <div class="col-xs-3">
-                  <input type="text" class="form-control" placeholder=".id number">
+                  <input type="text" class="form-control" placeholder="id number">
                 </div>
                 <div class="col-xs-4">
-                  <input type="text" class="form-control" placeholder=".id number">
+                  <input type="text" class="form-control" placeholder="id number">
                 </div>
               </div>
             </div>
@@ -41,10 +41,10 @@
             <div class="box-body">
               <div class="row">
                 <div class="col-xs-3">
-                  <input type="text" class="form-control" placeholder=".id number">
+                  <input type="text" class="form-control" placeholder="id number">
                 </div>
                 <div class="col-xs-4">
-                  <input type="text" class="form-control" placeholder=".id number">
+                  <input type="text" class="form-control" placeholder="id number">
                 </div>
               </div>
             </div>
