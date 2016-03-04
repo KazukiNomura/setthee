@@ -10,9 +10,8 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                　<th>revision</th>
                   <th>ID</th>
-                  <th>SHOP Name</th>
+                  <th><i class="fa fa-wrench"></i> SHOP Name</th>
                   <th>Genre</th>
                   <th>Report</th>
                   <th>Coupon</th>
@@ -26,14 +25,18 @@
           <?php foreach ($list as $info): ?>
                 <!-- <tabel list 1>  -->
                 <tr>
-                  <th><a href="#"><i class="fa fa-wrench"></i></a></th>
-                  <td><a href="#"><?=$info['id'];?></a></td>
+                  
+                  <td><?=$info['id'];?></td>
                   <td>
                   <a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></a>
                   </td>
                   <td><?=$master_info['genre'][$info['genre_id']];?></td>
-                  <td> <a href="#">yes</a></td>
-                  <td><a href="#">yes</a></td>
+                  <td>
+                  <a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['report_icon'];?></a>
+                  </td>
+                  <td>
+                  <a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['coupon_icon'];?></a>
+                  </td>
                   <td><a href="/shop/menu?shop_id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
                   <td><a href="/shop/photo?shop_id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
                 </tr>
