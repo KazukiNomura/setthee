@@ -1,45 +1,35 @@
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">SHOP DATE</h3>
+              <h3 class="box-title">COUPON DATE</h3>
             </div>
             <!-- /.box-header -->
-
 
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
                   <th>ID</th>
-                  <th>SHOP Name</th>
-                  <th>Genre</th>
-                  <th>Report</th>
-                  <th>Coupon</th>
-                  <th>Menu</th>
-                  <th>Photo</th>
+                  <th><i class="fa fa-wrench"></i> Coupon Title</th>
+                  <th>Expiration date(Day)</th>
                 </tr>
                 </thead>
                 <tbody>
+                <!--  <tabel name> -->
+
+          <?php foreach ($list as $info): ?>
+                <!-- <tabel list 1>  -->
                 <tr>
-                  <td><a href="#">34839</a></td>
+                  
+                  <td><?=$info['id'];?></td>
                   <td>
-                  <a href="#">Spiced pork with green mango</a>
+                  <a href="/coupon/edit?id=<?=$info['id'];?>"><?=$info['title'];?></a>
                   </td>
-                  <td>Myanmar Food</td>
-                  <td> <a href="#">yes</a></td>
-                  <td><a href="#">yes</a></td>
-                  <td><a href="#"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
-                  <td><a href="#"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
-                </tr>
-                <tr>
-                  <td><a href="#">98780</a></td>
-                  <td><a href="#">Crisp eschalot and dried shrimp relish (balachaung)</a>
+                  <td>
+                  <a href="/coupon/edit?id=<?=$info['id'];?>"><?=$info['expirationdate'];?></a>
                   </td>
-                  <td>Italian Food</td>
-                  <td><a href="#">yes</a></td>
-                  <td><a href="#">no</a></td>
-                  <td><a href="#"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
-                  <td><a href="#"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
                 </tr>
+                <!-- <tabel list 1>  -->
+          <?php endforeach; ?>
 
                 </tfoot>
               </table>

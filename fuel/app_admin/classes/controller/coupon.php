@@ -37,6 +37,13 @@ class Controller_Coupon extends View_Admin
     {
         $data = array();
 
+                $data['list'] = Model_T_Coupon::find('all', array(
+            'where' => array(
+                'del_flag' => 0
+            ),
+            'order_by' => array('id' => 'desc')
+        ));
+
         // View
         $this->template->title = $data['title'] = array('Coupon List');
         $this->template->auth  = $this->auth;

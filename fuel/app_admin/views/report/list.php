@@ -1,6 +1,6 @@
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">SHOP DATE</h3>
+              <h3 class="box-title">REPORT DATE</h3>
             </div>
             <!-- /.box-header -->
 
@@ -9,7 +9,7 @@
                 <thead>
                 <tr>
                   <th>ID</th>
-                  <th><i class="fa fa-wrench"></i>Report Title</th>
+                  <th><i class="fa fa-wrench"></i> Report Title</th>
                   <th>Visit Date</th>
                 </tr>
                 </thead>
