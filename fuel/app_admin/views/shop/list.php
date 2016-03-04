@@ -2,10 +2,7 @@
             <div class="box-header">
               <h3 class="box-title">SHOP DATE</h3>
             </div>
-            <!-- /.box-header -->
 
-
-           <!--  <tabel name> -->
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
@@ -20,17 +17,19 @@
                 </tr>
                 </thead>
                 <tbody>
-                <!--  <tabel name> -->
 
-          <?php foreach ($list as $info): ?>
-                <!-- <tabel list 1>  -->
+        <?php foreach ($list as $info): ?>
                 <tr>
-                  
                   <td><?=$info['id'];?></td>
                   <td>
                   <a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></a>
                   </td>
-                  <td><?=$master_info['genre'][$info['genre_id']];?></td>
+                  <?php $value = $info['genre_id']; ?>  
+                    <?php if ($value != 0): ?>
+                      <td><?=$master_info['genre'][$value];?></td>
+                    <?php else: ?>
+                    <td><?=" ";?></td>
+                    <?php endif; ?>
                   <td>
                   <a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['report_icon'];?></a>
                   </td>
@@ -40,9 +39,7 @@
                   <td><a href="/shop/menu?shop_id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
                   <td><a href="/shop/photo?shop_id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
                 </tr>
-                <!-- <tabel list 1>  -->
           <?php endforeach; ?>
-
 
                 </tfoot>
               </table>
@@ -59,25 +56,8 @@
               </ul>
             </div>
             <!-- <ページング> -->
-
             </div>
-            <!-- /.box-body -->
           </div>
-           <!-- /.box -->
         </div>
-        <!-- /.col -->
       </div>
-      <!-- /.row -->
-
-
-
-
-        <!-- jQuery 2.2.0 -->
-
-    <!-- /.content -->
-
   </div>
-
-
-  <!-- /.content-wrapper -->
-
