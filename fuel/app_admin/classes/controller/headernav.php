@@ -56,7 +56,7 @@ class Controller_Headernav extends View_Admin
     {
         $data = array();
 
-        $shop_id = \Input::get('id');
+        $news_id = \Input::get('id');
 
         // 情報登録 ---------------------------------
         if (\Input::post()) {
@@ -67,12 +67,12 @@ class Controller_Headernav extends View_Admin
             $news_id = $params['id'];
         }
 
-        $shop_info = Model_T_News::find('first', array(
+        $news_info = Model_T_News::find('first', array(
             'where' => array(
                 'id' => $news_id
             )
         ));
-        // self::debug($shop_info);
+        // self::debug($news_info);
         if (!empty($news_info)) {
             $data['news_info'] = $news_info;
         }
