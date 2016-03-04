@@ -20,28 +20,22 @@
                 <tr>
                   <th>ID</th>
                   <th>Title</th>
-                  <th>Date</th>
+                  <th>Date time</th>
                 </tr>
+
+          <?php foreach ($list as $info): ?>
+                <!-- <tabel list 1>  -->
                 <tr>
-                  <td>183</td>
-                  <td><a href="#">sample title sample title sample title sample title sample title sample title</a></td>
-                  <td>11-7-2014</td>
+                  
+                  <td><?=$info['id'];?></td>
+                  <td>
+                  <a href="/headernav/edit?id=<?=$info['id'];?>"><?=$info['title'];?></a>
+                  </td>
+                  <td><a href="/headernav/edit?id=<?=$info['id'];?>"><?=$info['time'];?></a></a></td>
                 </tr>
-                <tr>
-                  <td>219</td>
-                  <td><a href="#">sample title sample title sample title</a></td>
-                  <td>11-7-2014</td>
-                </tr>
-                <tr>
-                  <td>657</td>
-                  <td><a href="#">sample title sample titlesample title　sample titlesample title sample title</a></td>
-                  <td>11-7-2014</td>
-                </tr>
-                <tr>
-                  <td>175</td>
-                  <td><a href="#">sample title sample title sample title sample title sample title </a></td>
-                  <td>11-7-2014</td>
-                </tr>
+                <!-- <tabel list 1>  -->
+          <?php endforeach; ?>
+
               </table>
             </div>
             <!-- /.box-body -->

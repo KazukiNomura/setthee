@@ -25,7 +25,7 @@
 
                  <div class="form-group">
                   <label>News Textarea</label>
-                  <input class="form-control" rows="3" name="textarea" placeholder="Enter ..." value="<?=$news_info['textarea'];?>"> </input>
+                 <textarea class="form-control" rows="3" placeholder="Enter ..."  name="description" placeholder="Enter ..." value="<?=$news_info['textarea'];?>"></textarea>
                 </div>
 
                <div class="box-footer">
