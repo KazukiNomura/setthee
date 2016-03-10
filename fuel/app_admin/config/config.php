@@ -80,7 +80,9 @@ return array(
 	// 'language'           => 'en', // Default language
 	// 'language_fallback'  => 'en', // Fallback language when file isn't available for default language
 	// 'locale'             => 'en_US', // PHP set_locale() setting, null to not set
-
+	'language' => 'ja',
+	'language_fallback' => 'en',
+	'locale' => 'ja_JP.UTF-8',
 	/**
 	 * Internal string encoding charset
 	 */
@@ -94,6 +96,8 @@ return array(
 	 */
 	// 'server_gmt_offset'  => 0,
 	// 'default_timezone'   => null,
+	// 'server_gmt_offset'  => 9,
+	'default_timezone'   => 'Asia/Tokyo',
 
 	/**
 	 * Logging Threshold.  Can be set to any of the following:

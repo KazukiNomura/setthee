@@ -1,3 +1,6 @@
 # log
 fuel/app/logs/
 fuel/app_admin/logs/
+sftp-config.json
+bootstrap.php
+.htaccess
