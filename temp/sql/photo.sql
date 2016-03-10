@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2016 年 3 月 10 日 07:04
+-- Generation Time: 2016 年 3 月 10 日 08:01
 -- サーバのバージョン： 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -39,6 +39,12 @@ CREATE TABLE `t_photo` (
 -- テーブルのデータのダンプ `t_photo`
 --
 
+INSERT INTO `t_photo` (`id`, `type`, `photo_image`, `del_flag`, `created_at`, `updated_at`) VALUES
+(1, 'Space', '12348163_1642501666000198_463362214375075232_n.png', 0, '2016-03-01 07:16:09', '2016-03-01 07:16:09'),
+(2, 'Drink', 'logo_myanmar.png', 0, '2016-03-01 07:16:28', '2016-03-01 07:16:28'),
+(3, 'Food', 'logo_myanmar_developer.png', 0, '2016-03-01 07:26:56', '2016-03-01 07:37:43'),
+(4, 'Food', '12348163_1642501666000198_463362214375075232_n.png', 0, '2016-03-01 07:27:27', '2016-03-02 10:48:24'),
+(5, 'Space', '', 0, '2016-03-02 08:15:43', '2016-03-02 08:15:43');
 
 --
 -- Indexes for dumped tables

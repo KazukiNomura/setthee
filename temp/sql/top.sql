@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2016 年 3 月 10 日 07:02
+-- Generation Time: 2016 年 3 月 10 日 08:00
 -- サーバのバージョン： 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -40,6 +40,9 @@ CREATE TABLE `t_top` (
 -- テーブルのデータのダンプ `t_top`
 --
 
+INSERT INTO `t_top` (`id`, `header_img`, `coupon_id`, `report_id`, `del_flag`, `created_at`, `updated_at`) VALUES
+(1, 'seadream.png', 4445555, 55443333, 0, '2016-03-03 09:16:48', '2016-03-03 09:16:48'),
+(2, 'Myanmar_bk_gausu.jpg', 322233, 3333333, 0, '2016-03-03 11:02:52', '2016-03-03 11:03:33');
 
 --
 -- Indexes for dumped tables
