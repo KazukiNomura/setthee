@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2016 年 2 月 26 日 12:26
+-- Generation Time: 2016 年 3 月 10 日 07:02
 -- サーバのバージョン： 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `t_shop`
+-- テーブルの構造 `t_top`
 --
 
 CREATE TABLE `t_top` (
@@ -35,6 +35,11 @@ CREATE TABLE `t_top` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='TOP登録のテーブル';
+
+--
+-- テーブルのデータのダンプ `t_top`
+--
+
 
 --
 -- Indexes for dumped tables
@@ -54,7 +59,7 @@ ALTER TABLE `t_top`
 -- AUTO_INCREMENT for table `t_top`
 --
 ALTER TABLE `t_top`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

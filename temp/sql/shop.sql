@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2016 年 2 月 26 日 12:26
+-- Generation Time: 2016 年 3 月 10 日 07:02
 -- サーバのバージョン： 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -48,6 +48,9 @@ CREATE TABLE `t_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='SHOP登録のテーブル';
 
 --
+-- テーブルのデータのダンプ `t_shop`
+--
+
 -- Indexes for dumped tables
 --
 
@@ -65,7 +68,7 @@ ALTER TABLE `t_shop`
 -- AUTO_INCREMENT for table `t_shop`
 --
 ALTER TABLE `t_shop`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

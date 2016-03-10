@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2016 年 3 月 01 日 06:38
+-- Generation Time: 2016 年 3 月 10 日 07:04
 -- サーバのバージョン： 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -36,6 +36,11 @@ CREATE TABLE `t_photo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Photoのform';
 
 --
+-- テーブルのデータのダンプ `t_photo`
+--
+
+
+--
 -- Indexes for dumped tables
 --
 
@@ -53,7 +58,7 @@ ALTER TABLE `t_photo`
 -- AUTO_INCREMENT for table `t_photo`
 --
 ALTER TABLE `t_photo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

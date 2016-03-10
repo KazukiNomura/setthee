@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2016 年 3 月 02 日 03:53
+-- Generation Time: 2016 年 3 月 10 日 07:06
 -- サーバのバージョン： 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -42,6 +42,10 @@ CREATE TABLE `t_coupon` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='coupon formのテーブル';
 
 --
+-- テーブルのデータのダンプ `t_coupon`
+--
+
+--
 -- Indexes for dumped tables
 --
 
@@ -59,7 +63,7 @@ ALTER TABLE `t_coupon`
 -- AUTO_INCREMENT for table `t_coupon`
 --
 ALTER TABLE `t_coupon`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

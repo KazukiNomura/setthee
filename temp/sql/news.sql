@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2016 年 3 月 03 日 09:06
+-- Generation Time: 2016 年 3 月 10 日 07:05
 -- サーバのバージョン： 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -37,6 +37,10 @@ CREATE TABLE `t_news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='News formのテーブル';
 
 --
+-- テーブルのデータのダンプ `t_news`
+--
+
+--
 -- Indexes for dumped tables
 --
 
@@ -54,7 +58,7 @@ ALTER TABLE `t_news`
 -- AUTO_INCREMENT for table `t_news`
 --
 ALTER TABLE `t_news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
