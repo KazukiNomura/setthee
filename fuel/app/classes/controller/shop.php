@@ -39,7 +39,7 @@ class Controller_Home extends View_Webview
         // View
         $this->template->title = $data['title'] = array('SHOP');
         $this->template->auth  = $this->auth;
-        $this->template->content = View::forge('home/shop', $data);
+        $this->template->content = View::forge('shop/detail', $data);
     }
 	
 }
