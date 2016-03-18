@@ -24,7 +24,7 @@ use Controller\View_Webview;
 // Model
 use ERS\Common\Model;
 
-class Controller_Home extends View_Webview
+class Controller_Shop extends View_Webview
 {
     /**
      * TOP
