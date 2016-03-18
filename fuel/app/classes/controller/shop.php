@@ -32,14 +32,14 @@ class Controller_Home extends View_Webview
      * @access  public
      * @return  Response
      */
-    public function action_index()
+    public function action_shop()
     {
         $data = array();
 
         // View
-        $this->template->title = $data['title'] = array('TOP');
+        $this->template->title = $data['title'] = array('SHOP');
         $this->template->auth  = $this->auth;
-        $this->template->content = View::forge('home/index', $data);
+        $this->template->content = View::forge('home/shop', $data);
     }
 	
 }
