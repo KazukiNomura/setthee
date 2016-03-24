@@ -187,8 +187,50 @@ class Controller_Shop extends View_Admin
     }
 
 
+    /**
+     * MENUリスト
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_menulist()
+    {
 
-            /**
+        $data = array();
+
+        $menu_id = \Input::get('id');
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_Menu::insert($params);
+        } 
+
+        $data['list'] = Model_T_Menu::find('all', array(
+            'where' => array(
+              'id' => $menu_id
+            ),
+            'order_by' => array('id' => 'desc')
+        ));
+        // self::debug($list);
+
+        // マスター取得
+        $data['master_info'] = \Config::get('master.shop');
+        // self::debug($data['master_info']);
+
+
+
+
+        // View
+        $this->template->title = $data['title'] = array('MENU List');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/menulist', $data);
+    }
+
+
+    /**
      * SHOP Photo
      *
      * @access  public
@@ -247,6 +289,48 @@ class Controller_Shop extends View_Admin
         $this->template->title = $data['title'] = array('Edit PHOTO');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('shop/editphoto', $data);
+    }
+
+       /**
+     * PHOTOリスト
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_photolist()
+    {
+
+        $data = array();
+
+        $menu_id = \Input::get('id');
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_Photo::insert($params);
+        } 
+
+        $data['list'] = Model_T_Photo::find('all', array(
+            'where' => array(
+              'id' => $menu_id
+            ),
+            'order_by' => array('id' => 'desc')
+        ));
+        // self::debug($list);
+
+        // マスター取得
+        $data['master_info'] = \Config::get('master.shop');
+        // self::debug($data['master_info']);
+
+
+
+
+        // View
+        $this->template->title = $data['title'] = array('Photo List');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/photolist', $data);
     }
 
 

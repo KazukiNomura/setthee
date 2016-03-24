@@ -36,7 +36,7 @@
                   <td>
                   <a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['coupon_icon'];?></a>
                   </td>
-                  <td><a href="/shop/menu?shop_id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
+                  <td><a href="/shop/menulist?id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
                   <td><a href="/shop/photo?shop_id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
                 </tr>
           <?php endforeach; ?>
