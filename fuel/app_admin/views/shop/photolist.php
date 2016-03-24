@@ -9,22 +9,19 @@
                 <tr>
                   <th>ID</th>
                   <th><i class="fa fa-wrench"></i>Type</th>
-                  <th>Menu name</th>
-                  <th>Money</th>
+                  <th>Photo data</th>
                 </thead>
                 <tbody>
 
-        <?php foreach ($list as $menu_info): ?>
+        <?php foreach ($list as $photo_info): ?>
                 <tr>
-                  <td><?=$menu_info['id'];?></td>
+                  <td><?=$photo_info['id'];?></td>
                   <td>
-                  <a href="/shop/editmenu?id=<?=$menu_info['id'];?>"><?=$menu_info['menu_type'];?></a>
+                  <a href="/shop/editphoto?id=<?=$photo_info['id'];?>"><?=$photo_info['type'];?></a>
                   </td>
-
-				   <td>
-                  <a href="/shop/editmenu?id=<?=$menu_info['id'];?>"><?=$menu_info['menu_name'];?></a>
+                  <td>
+                  <a href="/shop/editphoto?id=<?=$photo_info['id'];?>"><?=$photo_info['photo_image'];?></a>
                   </td>
-
                 </tr>
           <?php endforeach; ?>
 
@@ -46,6 +43,8 @@
 
 <!-- <shop menu1> -->
             <?php echo Form::open(array('method' => 'post')); ?>
+            <input type="hidden" name="id" value="<?=$photo_info['id'];?>">
+
             <div class="box box-danger">
             <div class="box-header with-border">
               <h3 class="box-title">Menu</h3>
@@ -65,9 +64,6 @@
                   </select>
                 </div>
                 <!-- /Menu Type -->
-
-
-
 
 
                 <div class="form-group">

@@ -302,7 +302,7 @@ class Controller_Shop extends View_Admin
 
         $data = array();
 
-        $menu_id = \Input::get('id');
+        $photo_id = \Input::get('id');
 
         // 情報登録 ---------------------------------
         if (\Input::post()) {
@@ -314,7 +314,7 @@ class Controller_Shop extends View_Admin
 
         $data['list'] = Model_T_Photo::find('all', array(
             'where' => array(
-              'id' => $menu_id
+              'id' => $photo_id
             ),
             'order_by' => array('id' => 'desc')
         ));
