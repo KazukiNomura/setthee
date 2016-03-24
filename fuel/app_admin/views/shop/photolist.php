@@ -1,6 +1,5 @@
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Menu list</h3>
             </div>
 
             <div class="box-body">
@@ -47,7 +46,7 @@
 
             <div class="box box-danger">
             <div class="box-header with-border">
-              <h3 class="box-title">Menu</h3>
+              <h3 class="box-title">Photo</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">

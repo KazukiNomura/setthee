@@ -59,10 +59,7 @@
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
           <li class="dropdown messages-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
-            </a>
+
             <ul class="dropdown-menu">
               <li class="header">You have 4 messages</li>
               <li>
@@ -136,10 +133,7 @@
           </li>
           <!-- Notifications: style can be found in dropdown.less -->
           <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
-            </a>
+ 
             <ul class="dropdown-menu">
               <li class="header">You have 10 notifications</li>
               <li>
@@ -178,10 +172,7 @@
           </li>
           <!-- Tasks: style can be found in dropdown.less -->
           <li class="dropdown tasks-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
-            </a>
+
             <ul class="dropdown-menu">
               <li class="header">You have 9 tasks</li>
               <li>
@@ -316,17 +307,16 @@
             <i class="fa fa-cutlery"></i> <span>SHOP</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="/shop/list"><i class="fa fa-circle-o"></i> SHOP List</a></li>
+            <li class="active"><a href="/shop/list"><i class="fa fa-circle-o"></i>SHOP List</a></li>
             <li><a href="/shop/input"><i class="fa fa-circle-o"></i>New SHOP</a></li>
-            <li><a href="/shop/menu"><i class="fa fa-circle-o"></i>SHOP Menu</a></li>
-            <li><a href="/shop/photo"><i class="fa fa-circle-o"></i>SHOP Photo</a></li>
+<!--             <li><a href="/shop/menu"><i class="fa fa-circle-o"></i>SHOP Menu</a></li>
+            <li><a href="/shop/photo"><i class="fa fa-circle-o"></i>SHOP Photo</a></li> -->
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pencil"></i>
-            <span>Report</span>
-            <span class="label label-primary pull-right">4</span>
+            <span>Report</span><i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
             <li><a href="/report/list"><i class="fa fa-circle-o"></i>Report List</a></li>
@@ -337,8 +327,7 @@
         <li class="treeview">
             <a href="#">
             <i class="fa fa-plus-square"></i>
-            <span>Coupon</span>
-            <span class="label label-primary pull-right">4</span>
+            <span>Coupon</span><i class="fa fa-angle-left pull-right"></i>
           </a>
         <ul class="treeview-menu">
             <li><a href="/coupon/list"><i class="fa fa-circle-o"></i>Coupon List</a></li>
@@ -509,7 +498,7 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.3.2
+      <b>Version</b> 1.0.0
     </div>
     <strong>Copyright &copy; 2016 <a href="http://admin.setthee.localhost/">Set Thee</a>.</strong> All rights
     reserved.

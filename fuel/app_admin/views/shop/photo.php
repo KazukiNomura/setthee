@@ -2,7 +2,7 @@
             <?php echo Form::open(array('method' => 'post')); ?>
             <div class="box box-danger">
             <div class="box-header with-border">
-              <h3 class="box-title">Menu</h3>
+              <h3 class="box-title">Photo</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
