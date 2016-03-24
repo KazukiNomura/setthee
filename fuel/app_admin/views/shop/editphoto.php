@@ -27,7 +27,7 @@
 
                 <div class="form-group">
                   <label for="exampleInputFile">Photo</label>
-                  <input type="file" id="exampleInputFile" alue="<?=$photo_info['photo_image'];?>" name="photo_image">
+                  <input type="file" id="exampleInputFile" value="<?=$photo_info['photo_image'];?>" name="photo_image">
                 </div>
 
               <div class="box-footer">
@@ -39,3 +39,44 @@
                 </div>
                 </div>
 <!-- <shop menu> -->
+
+<!-- /////確認画面///// -->
+
+ <div class="box box-danger">
+
+            <div class="box-header with-border">
+              <h3 class="box-title">Confirmation</h3>
+            </div>
+            <!-- /.box-header -->
+            <br>
+            <div class="box-body">
+              <form role="form">
+
+              <div class="col-md-6">
+              <label>Type</label>
+              <p value="<?=$photo_info['type'];?>" name="type">
+              <?php print ($photo_info['type']);?>
+              </p>
+              </div>
+
+                <!-- text input -->
+                
+                <!-- Menu Type -->
+                <div class="col-md-6">
+                <label>Photo date</label>
+                <p id="exampleInputFile" value="<?=$photo_info['photo_image'];?>" name="photo_image">
+                <?php print ($photo_info['photo_image']);?>
+                </p>
+                </div>
+                <!-- /Menu Type -->
+
+      
+                </div>
+
+
+                </form>
+</div>
+<!-- /////確認画面///// -->
+                
+
+
