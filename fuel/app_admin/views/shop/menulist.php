@@ -1,3 +1,4 @@
+ <?php //debug($shop_id); ?>
           <div class="box">
             <div class="box-header">
             </div>
@@ -15,17 +16,17 @@
 
         <?php foreach ($list as $menu_info): ?>
                 <tr>
-                  <td><?=$menu_info['id'];?></td>
+                  <td><?=$menu_info['shop_id'];?></td>
                   <td>
-                  <a href="/shop/editmenu?id=<?=$menu_info['id'];?>"><?=$menu_info['menu_type'];?></a>
+                  <a href="/shop/editmenu?id=<?=$menu_info['shop_id'];?>"><?=$menu_info['menu_type'];?></a>
                   </td>
 
 				   <td>
-                  <a href="/shop/editmenu?id=<?=$menu_info['id'];?>"><?=$menu_info['menu_name'];?></a>
+                  <a href="/shop/editmenu?id=<?=$menu_info['shop_id'];?>"><?=$menu_info['menu_name'];?></a>
                   </td>
 
                   <td>
-                  <a href="/shop/editmenu?id=<?=$menu_info['id'];?>"><?=$menu_info['money'];?></a>
+                  <a href="/shop/editmenu?id=<?=$menu_info['shop_id'];?>"><?=$menu_info['money'];?></a>
                   </td>
                 </tr>
           <?php endforeach; ?>
@@ -54,7 +55,7 @@
             <!-- /.box-header -->
 
             <?php echo Form::open(array('method' => 'post')); ?>
-            <input type="hidden" name="id" value="<?=$menu_info['id'];?>">
+            <input type="hidden" name="shop_id" value="<?=$shop_id;?>">
             <div class="box-body">
               <form role="form">
                 <!-- text input -->

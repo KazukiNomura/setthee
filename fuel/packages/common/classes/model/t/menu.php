@@ -7,6 +7,7 @@ class Model_T_Menu extends Model
 {
     protected static $_properties = array(
         'id',
+        'shop_id',
         'menu_type',
         'menu_name',
         'description',

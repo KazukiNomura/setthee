@@ -287,7 +287,7 @@ class Database_MySQLi_Connection extends \Database_Connection
 				\Profiler::delete($benchmark);
 			}
 
-			throw new \Database_Exception($this->_connection->error.' [ '.$sql.' ]', $this->_connection->errno);
+
 		}
 
 		// check for multiresults, we don't support those at the moment
