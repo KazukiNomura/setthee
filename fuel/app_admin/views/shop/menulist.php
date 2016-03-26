@@ -16,7 +16,7 @@
 
         <?php foreach ($list as $menu_info): ?>
                 <tr>
-                  <td><?=$menu_info['shop_id'];?></td>
+                  <td><?=$menu_info['id'];?></td>
                   <td>
                   <a href="/shop/editmenu?id=<?=$menu_info['shop_id'];?>"><?=$menu_info['menu_type'];?></a>
                   </td>
