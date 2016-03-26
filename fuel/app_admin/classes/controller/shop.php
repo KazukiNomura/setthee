@@ -221,6 +221,7 @@ class Controller_Shop extends View_Admin
          //self::debug($data);
 
 
+        // shop_id受け渡し__________________
         $data['shop_id'] = $shop_id;
          self::debug($data); 
 
@@ -293,8 +294,8 @@ class Controller_Shop extends View_Admin
         $this->template->content = View::forge('shop/editphoto', $data);
     }
 
-       /**
-     * PHOTOリスト
+   /**
+     * Photoリスト
      *
      * @access  public
      * @return  Response
@@ -304,33 +305,36 @@ class Controller_Shop extends View_Admin
 
         $data = array();
 
-        $photo_id = \Input::get('id');
+        $shop_id = \Input::get('id');
+         self::debug($shop_id);
 
         // 情報登録 ---------------------------------
         if (\Input::post()) {
             $params = \Input::post();
             self::debug($params);
 
+            $shop_id = \Input::post('shop_id');
+
             Model_T_Photo::insert($params);
         } 
+        self::debug($shop_id);
 
         $data['list'] = Model_T_Photo::find('all', array(
             'where' => array(
-              'id' => $photo_id
+              'shop_id' => $shop_id
             ),
-            'order_by' => array('id' => 'desc')
+            'order_by' => array('shop_id' => 'desc')
         ));
-        // self::debug($list);
-
-        // マスター取得
-        $data['master_info'] = \Config::get('master.shop');
-        // self::debug($data['master_info']);
+         //self::debug($data);
 
 
+        // shop_id受け渡し__________________
+        $data['shop_id'] = $shop_id;
+         self::debug($data); 
 
 
         // View
-        $this->template->title = $data['title'] = array('Photo List');
+        $this->template->title = $data['title'] = array('MENU List');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('shop/photolist', $data);
     }

@@ -16,10 +16,10 @@
                 <tr>
                   <td><?=$photo_info['id'];?></td>
                   <td>
-                  <a href="/shop/editphoto?id=<?=$photo_info['id'];?>"><?=$photo_info['type'];?></a>
+                  <a href="/shop/editphoto?id=<?=$photo_info['shop_id'];?>"><?=$photo_info['type'];?></a>
                   </td>
                   <td>
-                  <a href="/shop/editphoto?id=<?=$photo_info['id'];?>"><?=$photo_info['photo_image'];?></a>
+                  <a href="/shop/editphoto?id=<?=$photo_info['shop_id'];?>"><?=$photo_info['photo_image'];?></a>
                   </td>
                 </tr>
           <?php endforeach; ?>
@@ -42,7 +42,7 @@
 
 <!-- <shop menu1> -->
             <?php echo Form::open(array('method' => 'post')); ?>
-            <input type="hidden" name="id" value="<?=$photo_info['id'];?>">
+            <input type="hidden" name="shop_id" value="<?=$shop_id;?>">
 
             <div class="box box-danger">
             <div class="box-header with-border">

@@ -7,6 +7,7 @@ class Model_T_Photo extends Model
 {
     protected static $_properties = array(
         'id',
+        'shop_id',
         'type',
         'photo_image',
         'del_flag',
