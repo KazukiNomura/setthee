@@ -360,7 +360,7 @@
             <li><a href="/headernav/and"><i class="fa fa-circle-o"></i>Set Thee And?</a></li>
             <li><a href="/headernav/fqinput"><i class="fa fa-circle-o"></i>F and Q form</a></li>
             <li><a href="/headernav/fqlist"><i class="fa fa-circle-o"></i>F and Q list</a></li>
-            <li><a href="/headernav/contact"><i class="fa fa-circle-o"></i>Contact us</a></li>
+            <!-- <li><a href="/headernav/contact"><i class="fa fa-circle-o"></i>Contact us</a></li> -->
           </ul>
         </li>
 
