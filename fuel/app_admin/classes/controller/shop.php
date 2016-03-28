@@ -250,12 +250,32 @@ class Controller_Shop extends View_Admin
 
         // 情報登録 ---------------------------------
         if (\Input::post()) {
+
+            // 設定（ファイル保存場所）
+            $config = array(
+                'path' => 'uploads',
+            );
+
+            // アップロード実行
+            Upload::process($config);
+
+            $getFile = Upload::get_files();
+            // self::debug($getFile); //exit;
+
+            // 検証
+            if (Upload::is_valid()) {         
+                // アップロードファイルを保存
+                Upload::save();         
+            }
+
+            // メニューインサート
             $params = \Input::post();
-            //self::debug($params);
-
-            $shop_id = \Input::post('shop_id');
-
+            if (isset($getFile[0]['name'])) {
+                $params['photo'] = $getFile[0]['name'];
+            }
+            // self::debug($params); exit;
             Model_T_Menu::insert($params);
+            $shop_id = \Input::post('shop_id');
         } 
         //self::debug($shop_id);
 
