@@ -1,4 +1,9 @@
- <?php //debug($shop_id); ?>
+ <?php //self::debug($data); ?>
+
+              <h3 class="box-title">
+            shop ID :
+			<?echo "$shop_id";?>
+			</h3>
           <div class="box">
             <div class="box-header">
             </div>

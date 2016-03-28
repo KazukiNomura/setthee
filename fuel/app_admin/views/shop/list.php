@@ -13,6 +13,7 @@
                   <th>Coupon</th>
                   <th>Menu</th>
                   <th>Photo</th>
+                  <th><i class="fa fa-share"></i> Delete</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -37,6 +38,7 @@
                   </td>
                   <td><a href="/shop/menulist?id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
                   <td><a href="/shop/photolist?id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
+                  <th><a href=""><i class="fa fa-share"></i></a></th>
                 </tr>
           <?php endforeach; ?>
 
@@ -45,13 +47,13 @@
             <!-- <ページング> -->
             <div class="box-footer clearfix">
               <ul class="pagination pagination-sm no-margin pull-right">
-                <li><a href="#">&laquo;</a></li>
+                <li class="prev"><a href="#">&laquo;</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li class="next"><a href="#">&raquo;</a></li>
               </ul>
             </div>
             <!-- <ページング> -->

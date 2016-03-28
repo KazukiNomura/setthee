@@ -179,6 +179,7 @@ class Controller_Shop extends View_Admin
         if (!empty($menu_info)) {
             $data['menu_info'] = $menu_info;
         }
+        //self::debug($menu_info);
 
         // View
         $this->template->title = $data['title'] = array('Edit MENU');
@@ -199,18 +200,18 @@ class Controller_Shop extends View_Admin
         $data = array();
 
         $shop_id = \Input::get('id');
-         self::debug($shop_id);
+         //self::debug($shop_id);
 
         // 情報登録 ---------------------------------
         if (\Input::post()) {
             $params = \Input::post();
-            self::debug($params);
+            //self::debug($params);
 
             $shop_id = \Input::post('shop_id');
 
             Model_T_Menu::insert($params);
         } 
-        self::debug($shop_id);
+        //self::debug($shop_id);
 
         $data['list'] = Model_T_Menu::find('all', array(
             'where' => array(
@@ -223,7 +224,7 @@ class Controller_Shop extends View_Admin
 
         // shop_id受け渡し__________________
         $data['shop_id'] = $shop_id;
-         self::debug($data); 
+         //self::debug($data); 
 
 
         // View
