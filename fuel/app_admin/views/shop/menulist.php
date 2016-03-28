@@ -16,6 +16,7 @@
                   <th><i class="fa fa-wrench"></i>Type</th>
                   <th>Menu name</th>
                   <th>Money</th>
+                  <th><i class="fa fa-share"></i> Delete</th>
                 </thead>
                 <tbody>
 
@@ -33,6 +34,7 @@
                   <td>
                   <a href="/shop/editmenu?id=<?=$menu_info['shop_id'];?>"><?=$menu_info['money'];?></a>
                   </td>
+                  <td><a href="/shop/deletemenu?id=<?=$menu_info['id'];?>"><i class="fa fa-share"></i></a></td>
                 </tr>
           <?php endforeach; ?>
 

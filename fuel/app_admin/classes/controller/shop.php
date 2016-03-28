@@ -76,7 +76,7 @@ class Controller_Shop extends View_Admin
               'del_flag' => 1
             );
 
-            Model_T_Shop::updateByPk($params['shop_id'], $update_param);
+            Model_T_Shop::updateByPk($params['id'], $update_param);
             \Response::redirect('shop/list');
         }     
 
@@ -277,6 +277,46 @@ class Controller_Shop extends View_Admin
         $this->template->title = $data['title'] = array('MENU List');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('shop/menulist', $data);
+    }
+
+        /**
+     * MENUリスト削除
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_deletemenu()
+    {
+        $data = array();
+
+                // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            $update_param = array(
+              'del_flag' => 1
+            );
+
+            Model_T_Menu::updateByPk($params['id'], $update_param);
+            \Response::redirect('shop/list');
+        }     
+
+
+
+        $menu_id = \Input::get('id');
+         self::debug($menu_id);
+
+         // menu_id受け渡し__________________
+        $data['menu_id'] = $menu_id;
+         self::debug($data); 
+
+
+
+        // View
+        $this->template->title = $data['title'] = array('SHOP Delete');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/deletemenu', $data);
     }
 
 
