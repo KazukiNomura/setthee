@@ -144,6 +144,7 @@ class Controller_Shop extends View_Admin
 
             Model_T_Shop::updateByPk($params['id'], $params);
             $shop_id = $params['id'];
+            \Response::redirect('shop/list');
         }
 
         $shop_info = Model_T_Shop::find('first', array(
@@ -203,6 +204,7 @@ class Controller_Shop extends View_Admin
 
         $menu_id = \Input::get('id');
 
+
         // 情報登録 ---------------------------------
         if (\Input::post()) {
             $params = \Input::post();
@@ -211,6 +213,8 @@ class Controller_Shop extends View_Admin
             Model_T_Menu::updateByPk($params['id'], $params);
             $menu_id = $params['id'];
         }
+         //self::debug($menu_id);
+
 
         $menu_info = Model_T_Menu::find('first', array(
             'where' => array(
