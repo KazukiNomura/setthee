@@ -58,6 +58,48 @@ class Controller_Shop extends View_Admin
     }
 
     /**
+     * SHOPリスト削除
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_delete()
+    {
+        $data = array();
+
+                // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            $update_param = array(
+              'del_flag' => 1
+            );
+
+            Model_T_Shop::updateByPk($params['shop_id'], $update_param);
+            \Response::redirect('shop/list');
+        }     
+
+
+
+        $shop_id = \Input::get('id');
+         self::debug($shop_id);
+
+         // shop_id受け渡し__________________
+        $data['shop_id'] = $shop_id;
+         self::debug($data); 
+
+
+
+        // View
+        $this->template->title = $data['title'] = array('SHOP Delete');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/delete', $data);
+    }
+
+
+
+    /**
      * SHOP作成
      *
      * @access  public
