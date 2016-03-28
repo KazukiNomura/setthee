@@ -76,7 +76,7 @@ class Controller_Shop extends View_Admin
               'del_flag' => 1
             );
 
-            Model_T_Shop::updateByPk($params['id'], $update_param);
+            Model_T_Shop::updateByPk($params['shop_id'], $update_param);
             \Response::redirect('shop/list');
         }     
 
