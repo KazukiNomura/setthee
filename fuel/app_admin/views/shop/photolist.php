@@ -41,7 +41,7 @@
             <!-- <ページング> -->
 
 <!-- <shop menu1> -->
-            <?php echo Form::open(array('method' => 'post')); ?>
+            <?php echo Form::open(array('method'=>'post', 'enctype'=>'multipart/form-data')); ?>
             <input type="hidden" name="shop_id" value="<?=$shop_id;?>">
 
             <div class="box box-danger">
@@ -67,8 +67,12 @@
 
                 <div class="form-group">
                   <label for="exampleInputFile">Photo</label>
-                  <input type="file" id="exampleInputFile" name="photo_image">
+                    <?php if (!empty($menu_info['photo'])): ?>
+                      <img src="/uploads/<?=$menu_info['photo'];?>" height="20">
+                    <?php endif; ?>
+                     <?php echo Form::file('photo'); ?>
                 </div>
+               
 
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Submit</button>
