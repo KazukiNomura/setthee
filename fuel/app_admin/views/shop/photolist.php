@@ -19,7 +19,9 @@
                   <a href="/shop/editphoto?id=<?=$photo_info['shop_id'];?>"><?=$photo_info['type'];?></a>
                   </td>
                   <td>
-                  <a href="/shop/editphoto?id=<?=$photo_info['shop_id'];?>"><?=$photo_info['photo_image'];?></a>
+                    <?php if (!empty($photo_info['photo_image'])): ?>
+                      <img src="/uploads/<?=$photo_info['photo_image'];?>" height="20">
+                    <?php endif; ?>
                   </td>
                 </tr>
           <?php endforeach; ?>
@@ -67,9 +69,6 @@
 
                 <div class="form-group">
                   <label for="exampleInputFile">Photo</label>
-                    <?php if (!empty($menu_info['photo'])): ?>
-                      <img src="/uploads/<?=$menu_info['photo'];?>" height="20">
-                    <?php endif; ?>
                      <?php echo Form::file('photo'); ?>
                 </div>
                

@@ -438,7 +438,7 @@ class Controller_Shop extends View_Admin
             // メニューインサート
             $params = \Input::post();
             if (isset($getFile[0]['name'])) {
-                $params['photo'] = $getFile[0]['name'];
+                $params['photo_image'] = $getFile[0]['name'];
             }
             // self::debug($params); exit;
             Model_T_Menu::insert($params);
