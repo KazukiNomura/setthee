@@ -46,7 +46,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>S</b>T</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Set</b>Thee ဆက္သီး</span>
+      <span class="logo-lg"><img src="/design/dist/img/setthee_logo.png" alt="setthee logo" height="38px width="110px" "></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top" role="navigation">
