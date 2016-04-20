@@ -281,7 +281,9 @@ class Controller_Shop extends View_Admin
 
         $data['list'] = Model_T_Menu::find('all', array(
             'where' => array(
-              'shop_id' => $shop_id
+              'shop_id' => $shop_id,
+              'del_flag' => 0
+
             ),
             'order_by' => array('shop_id' => 'desc')
         ));
