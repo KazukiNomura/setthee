@@ -450,7 +450,8 @@ class Controller_Shop extends View_Admin
 
         $data['list'] = Model_T_Photo::find('all', array(
             'where' => array(
-              'shop_id' => $shop_id
+              'shop_id' => $shop_id,
+              'del_flag' => 0
             ),
             'order_by' => array('shop_id' => 'desc')
         ));
@@ -466,6 +467,46 @@ class Controller_Shop extends View_Admin
         $this->template->title = $data['title'] = array('MENU List');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('shop/photolist', $data);
+    }
+
+   /**
+     * MENUリスト削除
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_deletephoto()
+    {
+        $data = array();
+
+                // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            $update_param = array(
+              'del_flag' => 1
+            );
+
+            Model_T_Menu::updateByPk($params['id'], $update_param);
+            \Response::redirect('shop/list');
+        }     
+
+
+
+        $menu_id = \Input::get('id');
+         self::debug($menu_id);
+
+         // menu_id受け渡し__________________
+        $data['shop_id'] = $menu_id;
+         self::debug($data); 
+
+
+
+        // View
+        $this->template->title = $data['title'] = array('Photo Delete');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/deletephoto', $data);
     }
 
 

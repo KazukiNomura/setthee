@@ -9,6 +9,7 @@
                   <th>ID</th>
                   <th><i class="fa fa-wrench"></i>Type</th>
                   <th>Photo data</th>
+                  <th><i class="fa fa-share"></i> Delete</th>
                 </thead>
                 <tbody>
 
@@ -23,6 +24,7 @@
                       <img src="/uploads/<?=$photo_info['photo_image'];?>" height="20">
                     <?php endif; ?>
                   </td>
+                  <td><a href="/shop/deletephoto?id=<?=$photo_info['id'];?>"><i class="fa fa-share"></i></a></td>
                 </tr>
           <?php endforeach; ?>
 
