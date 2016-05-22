@@ -1,130 +1,99 @@
+ <div id="wrapper">
+        <div class="wrapperIn">
+        <header class="header clearfix">
+            <ul class="gNav">
+                <li class="gNav01"><a href="#"><img src="/design/common/img/header/logo.png" alt="" /></a></li>
+                <li class="gNav02"><a href="#"><img src="/design/common/img/header/logo_txt.png" alt="" /></a></li>
+                <li class="gNav03"><a href="#"><img src="/design/common/img/header/menu.png" alt="" /></a></li>
+            </ul>
+        </header><!-- header -->
+        <div class="banner">
+            <img src="design/imges/top/top_bnr.png" alt="" />
+        </div>
+        <div class="menu clearfix">
+            <ul class="menuIn">
+                <li  class="menu01"><a href="#">Report</a></li>
+                <li class="menu02 active"><a href="#">Coupon</a></li>
+                <li class="menu03"><a href="#">Category</a></li>
+            </ul>
+        </div><!-- menu -->
+        <div class="content clearfix top">
+            <div class="contentIn">
+                <div class="topsec clearfix">
+                    <ul class="topsecLeft clearfix">
+                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
+                        <li><img src="design/imges/top/top_img01.png" alt="" /></li>
+                        <li class="shop_name">Shop name</li>
+                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
+                        <li class="place">Place</li>
 
-    <ons-navigator var="navi">
-        <ons-page>
-            <ons-toolbar>
-                <div class="center">Set Thee</div>
-            </ons-toolbar>
+                    </ul>
+                    <ul class="topsecRight clearfix">
+                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
+                        <li><img src="design/imges/top/top_img02.png" alt="" /></li>
+                        <li class="shop_name">Shop name</li>
+                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
+                        <li class="place">Place</li>
+                    </ul>
+                </div><!-- topsec -->
+                <div class="topsec clearfix">
+                    <ul class="topsecLeft clearfix">
+                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
+                        <li><img src="design/imges/top/top_img03.png" alt="" /></li>
+                        <li class="shop_name">Shop name</li>
+                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
+                        <li class="place">Place</li>
 
-            <section>
-                <a href="#"><img src="/design/images/main_visual.jpg" alt="main visual" width="100%;"></a>
-            </section>
+                    </ul>
+                    <ul class="topsecRight clearfix">
+                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
+                        <li><img src="design/imges/top/top_img04.png" alt="" /></li>
+                        <li class="shop_name">Shop name</li>
+                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
+                        <li class="place">Place</li>
+                    </ul>
+                </div><!-- topsec -->
+                <div class="topsec clearfix">
+                    <ul class="topsecLeft clearfix">
+                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
+                        <li><img src="design/imges/top/top_img05.png" alt="" /></li>
+                        <li class="shop_name">Shop name</li>
+                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
+                        <li class="place">Place</li>
 
-            <div class="coupon">
-                <p class="contents_title">Coupon</p>
+                    </ul>
+                    <ul class="topsecRight clearfix">
+                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
+                        <li><img src="design/imges/top/top_img06.png" alt="" /></li>
+                        <li class="shop_name">Shop name</li>
+                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
+                        <li class="place">Place</li>
+                    </ul>
+                </div><!-- topsec -->
+                <div class="topsec clearfix">
+                    <ul class="topsecLeft clearfix">
+                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
+                        <li><img src="design/imges/top/top_img07.png" alt="" /></li>
+                        <li class="shop_name">Shop name</li>
+                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
+                        <li class="place">Place</li>
 
+                    </ul>
+                    <ul class="topsecRight clearfix">
+                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
+                        <li><img src="design/imges/top/top_img08.png" alt="" /></li>
+                        <li class="shop_name">Shop name</li>
+                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
+                        <li class="place">Place</li>
+                    </ul>
+                </div><!-- topsec -->
             </div>
-
-
-            <section class="coupon_contents">
-
-                <div class="leftcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>coupon title</article>
-                </div>
-
-                <div class="rightcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>coupon title</article>
-                </div>
-
-                
-
-                <br>
-
-                <div class="leftcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>coupon title</article>
-                </div>
-
-                <div class="rightcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>coupon title</article>
-                </div>
-
-               <br>
-
-                <div class="leftcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>coupon title</article>
-                </div>
-
-                <div class="rightcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>coupon title</article>
-                </div>
-
-                <br>
-
-                <div class="leftcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>coupon title</article>
-                </div>
-
-                <div class="rightcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>coupon title</article>
-                </div>
-
-                <br>
-
-                <div class="leftcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>coupon title</article>
-                </div>
-
-                <div class="rightcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>coupon title</article>
-                </div>
-
-                <div class="clear"></div>
-
-
-
-            <div class="coupon">
-                <p class="contents_title">Report</p>
-
-            </div>
-
-
-            <section class="coupon_contents">
-
-                <div class="leftcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>Report title</article>
-                </div>
-
-                <div class="rightcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>Report title</article>
-                </div>
-
-
-                <br>
-
-                <div class="leftcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>Report title</article>
-                </div>
-
-                <div class="rightcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>Report title</article>
-                </div>
-
-
-                <br>
-
-                <div class="leftcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>Report title</article>
-                </div>
-
-                <div class="rightcolumn">
-                <a href="#"><img src="/design/images/dummy.gif" alt="coupon_photo" width="130px" height="130px"></a>
-                <article>Report title</article>
-                </div>
-
-                <div class="clear"></div>
-
-            </section>
+        </div><!-- content -->
+        <ul class="footer clearfix">
+                <li><a href="#" class="fnav01"><img src="/design/common/img/footer/ft_img01_off.png" alt="" /></a></li>
+                <li><a href="#"><img src="/design/common/img/footer/ft_img02_off.png" alt="" /></a></li>
+                <li><a href="#"><img src="/design/common/img/footer/ft_img03_off.png" alt="" /></a></li>
+                <li><a href="#"><img src="/design/common/img/footer/ft_img04_off.png" alt="" /></a></li>
+        </ul><!-- footer -->
+        </div><!-- wrapperIn -->
+    </div><!-- wrapper -->
