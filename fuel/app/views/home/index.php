@@ -20,14 +20,17 @@
         <div class="content clearfix top">
             <div class="contentIn">
                 <div class="topsec clearfix">
+
+                <?php foreach ($list as $info): ?>
                     <ul class="topsecLeft clearfix">
                         <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
                         <li><img src="design/imges/top/top_img01.png" alt="" /></li>
-                        <li class="shop_name">Shop name</li>
+                        <li class="shop_name"><a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></li>
                         <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
                         <li class="place">Place</li>
-
                     </ul>
+                    <?php endforeach; ?>
+
                     <ul class="topsecRight clearfix">
                         <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
                         <li><img src="design/imges/top/top_img02.png" alt="" /></li>

@@ -36,6 +36,19 @@ class Controller_Home extends View_Webview
     {
         $data = array();
 
+            $data['list'] = Model_T_Shop::find('all', array(
+            'where' => array(
+                'del_flag' => 0
+            ),
+            'order_by' => array('id' => 'desc')
+        ));
+        // self::debug($list);
+
+        // マスター取得
+        $data['master_info'] = \Config::get('master.shop');
+        // self::debug($data['master_info']);
+
+
         // View
         $this->template->title = $data['title'] = array('TOP');
         $this->template->auth  = $this->auth;
