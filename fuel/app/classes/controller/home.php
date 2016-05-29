@@ -49,6 +49,8 @@ class Controller_Home extends View_Webview
         $data['master_info'] = \Config::get('master.shop');
         // self::debug($data['master_info']);
 
+        
+
 
         // View
         $this->template->title = $data['title'] = array('TOP');

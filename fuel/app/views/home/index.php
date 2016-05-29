@@ -24,71 +24,27 @@
                 <?php foreach ($list as $info): ?>
                     <ul class="topsecLeft clearfix">
                         <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
-                        <li><img src="design/imges/top/top_img01.png" alt="" /></li>
+                        <li> <?php if (!empty($menu_info['photo'])): ?>
+                      <img src="/uploads/<?=$menu_info['photo'];?>" height="20">
+                    <?php endif; ?>
+                    </li>
+                        <li class="shop_name"></li>
+                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
+                        <li class="place">Place</li>
+                    </ul>
+
+                     <ul class="topsecRight clearfix">
+                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
+                        <li><img src="design/imges/top/top_img02.png" alt="" /></li>
                         <li class="shop_name"><a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></li>
                         <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
                         <li class="place">Place</li>
                     </ul>
                     <?php endforeach; ?>
 
-                    <ul class="topsecRight clearfix">
-                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
-                        <li><img src="design/imges/top/top_img02.png" alt="" /></li>
-                        <li class="shop_name">Shop name</li>
-                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
-                        <li class="place">Place</li>
-                    </ul>
-                </div><!-- topsec -->
-                <div class="topsec clearfix">
-                    <ul class="topsecLeft clearfix">
-                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
-                        <li><img src="design/imges/top/top_img03.png" alt="" /></li>
-                        <li class="shop_name">Shop name</li>
-                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
-                        <li class="place">Place</li>
 
-                    </ul>
-                    <ul class="topsecRight clearfix">
-                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
-                        <li><img src="design/imges/top/top_img04.png" alt="" /></li>
-                        <li class="shop_name">Shop name</li>
-                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
-                        <li class="place">Place</li>
-                    </ul>
                 </div><!-- topsec -->
-                <div class="topsec clearfix">
-                    <ul class="topsecLeft clearfix">
-                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
-                        <li><img src="design/imges/top/top_img05.png" alt="" /></li>
-                        <li class="shop_name">Shop name</li>
-                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
-                        <li class="place">Place</li>
 
-                    </ul>
-                    <ul class="topsecRight clearfix">
-                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
-                        <li><img src="design/imges/top/top_img06.png" alt="" /></li>
-                        <li class="shop_name">Shop name</li>
-                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
-                        <li class="place">Place</li>
-                    </ul>
-                </div><!-- topsec -->
-                <div class="topsec clearfix">
-                    <ul class="topsecLeft clearfix">
-                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
-                        <li><img src="design/imges/top/top_img07.png" alt="" /></li>
-                        <li class="shop_name">Shop name</li>
-                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
-                        <li class="place">Place</li>
-
-                    </ul>
-                    <ul class="topsecRight clearfix">
-                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
-                        <li><img src="design/imges/top/top_img08.png" alt="" /></li>
-                        <li class="shop_name">Shop name</li>
-                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
-                        <li class="place">Place</li>
-                    </ul>
                 </div><!-- topsec -->
             </div>
         </div><!-- content -->
