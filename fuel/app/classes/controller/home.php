@@ -23,6 +23,7 @@ use Controller\View_Webview;
 
 // Model
 use ERS\Common\Model;
+use ERS\Common\Model\Model_T_Shop;
 
 class Controller_Home extends View_Webview
 {
