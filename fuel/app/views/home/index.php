@@ -28,16 +28,10 @@
                         </li>
                         <li class="shop_name"><a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></li>
                         <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
-                        <li class="place">Place</li>
+                        <li class="place"><?=$info['price'];?></li>
                     </ul>
 
-                     <ul class="topsecRight clearfix">
-                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
-                        <li><img src="design/imges/top/top_img02.png" alt="" /></li>
-                        <li class="shop_name"><a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></li>
-                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
-                        <li class="place">Place</li>
-                    </ul>
+
                     <?php endforeach; ?>
 
 

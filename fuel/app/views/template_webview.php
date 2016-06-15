@@ -88,13 +88,13 @@ a {
 }
 .active {
     color: #222222 !important;
-    background: url(../../common/img/bg/arrow.png) no-repeat center bottom;
+    background: url(design/common/img/bg/arrow.png) no-repeat center bottom;
 }
 .menu03 {
     width: 135px;
 }
 .content {
-    background: url(../../common/img/bg/content_bg.png) repeat;
+    background: url(design/common/img/bg/content_bg.png) repeat;
 }
 .topsec {
     padding-top: 20px;
@@ -131,7 +131,7 @@ a {
     word-wrap: break-word;
 }
 .place {
-    background: url(../../img/top/top_chat.png) no-repeat;
+    background: url(design/imges/top/top_chat.png) no-repeat;
     margin: 15px 10px;
     padding-left: 25px;
     color: #666666;
@@ -227,7 +227,7 @@ a {
     margin: 0 auto;
     border-bottom: 2px solid #e2e2e2;
     padding: 0 10px 20px 10px;
-    background: url(../../img/couponlist/couponlist02.png) no-repeat 98%;
+    background: url(design/img/couponlist/couponlist02.png) no-repeat 98%;
 }
 .coupon_img {
     float: left;
@@ -319,7 +319,7 @@ a {
     font-size: 24px;
     background-color: #decfb8;
     padding: 17px 0 17px 20px;
-    background: #decfb8 url(../../img/shopdetail/bg_arw.png) no-repeat 95%;
+    background: #decfb8 url(design/img/shopdetail/bg_arw.png) no-repeat 95%;
 }
 .shopdetail_tb {
     width: 640px;
@@ -408,7 +408,7 @@ a {
     color: #000000;
 }
 .iconarr{
-    background: #333333 url(../../img/shopdetail/icon_arr.png) no-repeat 4%;
+    background: #333333 url(design/img/shopdetail/icon_arr.png) no-repeat 4%;
 }
 .footer {
     background: #282828;
