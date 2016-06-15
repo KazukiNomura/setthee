@@ -45,11 +45,6 @@ class Controller_Home extends View_Webview
         ));
         // self::debug($list);
 
-        // マスター取得
-        $data['master_info'] = \Config::get('master.shop');
-        // self::debug($data['master_info']);
-
-        
 
 
         // View

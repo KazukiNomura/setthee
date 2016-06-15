@@ -38,7 +38,7 @@ CREATE TABLE `t_shop` (
   `header_img` varchar(255) NOT NULL,
   `address_info` varchar(128) NOT NULL,
   `businesshours` varchar(64) NOT NULL,
-  `price` tinyint(64) NOT NULL,
+  `price` varchar(64) NOT NULL,
   `credit_id` int(11) NOT NULL,
   `phone_number` varchar(64) NOT NULL COMMENT 'infoの電話番号',
   `wi-fi` varchar(11) NOT NULL,
