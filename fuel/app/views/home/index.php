@@ -27,7 +27,7 @@
                    　　　<li><img src="design/imges/top/top_img02.png" alt="" /></li>
                         </li>
                         <li class="shop_name"><a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></li>
-                        <li class="text">texttexttexttexttexttexttext<br/>texttexttexttexttexttexttext</li>
+                        <li class="text"><?=$info['address_info'];?></li>
                         <li class="place"><?=$info['price'];?></li>
                     </ul>
 
