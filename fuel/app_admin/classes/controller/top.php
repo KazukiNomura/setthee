@@ -50,26 +50,56 @@ class Controller_Top extends View_Admin
     {
         $data = array();
 
-        $top_id = \Input::get('id');
+
+$top_id = \Input::get('id');
+         //self::debug($top_id);
 
         // 情報登録 ---------------------------------
         if (\Input::post()) {
+
+            // 設定（ファイル保存場所）
+            $config = array(
+                'path' => 'uploads',
+            );
+
+            // アップロード実行
+            Upload::process($config);
+
+            $getFile = Upload::get_files();
+            // self::debug($getFile); //exit;
+
+            // 検証
+            if (Upload::is_valid()) {         
+                // アップロードファイルを保存
+                Upload::save();         
+            }
+
+            // メニューインサート
             $params = \Input::post();
-             self::debug($params);
+            if (isset($getFile[0]['id'])) {
+                $params['id'] = $getFile[0]['name'];
+            }
+            // self::debug($params); exit;
+            Model_T_Top::insert($params);
+            $top_id = \Input::post('id');
+        } 
+        //self::debug($shop_id);
 
-            Model_T_Top::updateByPk($params['id'], $params);
-            $top_id = $params['id'];
-        }
-
-        $top_info = Model_T_Top::find('first', array(
+        $data['list'] = Model_T_Top::find('all', array(
             'where' => array(
-                'id' => $top_id
-            )
+              'id' => $top_id,
+              'del_flag' => 0
+
+            ),
+            'order_by' => array('id' => 'desc')
         ));
-        // self::debug($top_info);
-        if (!empty($top_info)) {
-            $data['top_info'] = $top_info;
-        }
+         //self::debug($data);
+
+
+        // shop_id受け渡し__________________
+        $data['id'] = $top_id;
+         //self::debug($data); 
+
 
         // View
         $this->template->title = $data['title'] = array('TOP Page');
@@ -77,3 +107,5 @@ class Controller_Top extends View_Admin
         $this->template->content = View::forge('top/edit', $data);
     }   
 }
+
+
