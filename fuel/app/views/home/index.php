@@ -20,10 +20,9 @@
                 <div class="topsec clearfix">
 
                 <?php foreach ($list as $info): ?>
-                    <ul class="topsecLeft clearfix">
-                        <li class="comment"><a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></li>
-                   　　　<li><img src="design/imges/top/top_img02.png" alt="" /></li>
-                        </li>
+                    <ul class="topsecLeft">
+                        <li class="comment"><a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></a></li>
+                   　　　<li class="topthumbnail"><img src="design/imges/top/top_img02.png" alt="" /></li>
                         <li class="text2"><?=$info['businesshours'];?></li>
                         <li class="text"><?=$info['address_info'];?></li>
                         <li class="place"><?=$info['price'];?></li>

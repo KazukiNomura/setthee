@@ -100,12 +100,18 @@ a {
     padding-top: 20px;
 }
 .topsecLeft {
-    width: 290px;
-    float: left;
+/*    width: 290px;*/
+/*    float: left;*/
     border-radius: 8px;
     background: #ffffff;
     font-size: 22px;
 }
+
+li.topthumbnail {
+    width: 100%;
+    text-align: center;
+}
+
 .comment {
     font-size: 22px;
     background: #ff0084;
@@ -142,11 +148,12 @@ li.text2 {
     background: url(design/imges/top/top_chat.png) no-repeat;
     margin: 15px 10px;
     padding-left: 25px;
+    padding-bottom: 15px;
     color: #666666;
 }
 .topsecRight {
-    width: 290px;
-    float: right;
+/*    width: 290px;*/
+/*    float: right;*/
     border-radius: 8px;
     background: #ffffff;
     font-size: 22px;
@@ -457,7 +464,7 @@ li.text2 {
         width: 45%;
     }
     .topsecLeft, .topsecRight {
-        width: 48%;
+/*        width: 48%;*/
     }
     .text {
         width: 90%;
@@ -605,6 +612,7 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
 
     </style>
 
