@@ -12,9 +12,7 @@
         </div>
         <div class="menu clearfix">
             <ul class="menuIn">
-                <li  class="menu01"><a href="#">Report</a></li>
-                <li class="menu02 active"><a href="#">Coupon</a></li>
-                <li class="menu03"><a href="#">Category</a></li>
+                <li class="menu02 active"><a href="#">New SHOP</a></li>
             </ul>
         </div><!-- menu -->
         <div class="content clearfix top">
@@ -23,10 +21,10 @@
 
                 <?php foreach ($list as $info): ?>
                     <ul class="topsecLeft clearfix">
-                        <li class="comment"><span>30%off</span>commentcomment<br/>commentcommentcomment</li>
+                        <li class="comment"><a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></li>
                    　　　<li><img src="design/imges/top/top_img02.png" alt="" /></li>
                         </li>
-                        <li class="shop_name"><a href="/shop/edit?id=<?=$info['id'];?>"><?=$info['shop_name'];?></li>
+                        <li class="text2"><?=$info['businesshours'];?></li>
                         <li class="text"><?=$info['address_info'];?></li>
                         <li class="place"><?=$info['price'];?></li>
                     </ul>

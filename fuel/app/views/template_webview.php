@@ -73,7 +73,7 @@ a {
 .menuIn li {
     float: left;
     font-size: 24px;
-    text-align: center;
+/*    text-align: center;*/
 }
 .menuIn li a {
     display: block;
@@ -88,7 +88,7 @@ a {
 }
 .active {
     color: #222222 !important;
-    background: url(design/common/img/bg/arrow.png) no-repeat center bottom;
+/*    background: url(design/common/img/bg/arrow.png) no-repeat center bottom;*/
 }
 .menu03 {
     width: 135px;
@@ -129,6 +129,14 @@ a {
     border-bottom: 2px solid #e4e4e4;
     width: 270px;
     word-wrap: break-word;
+}
+li.text2 {
+    color: #666666;
+    padding: 10px 10px 5px 10px;
+    /* border-bottom: 2px solid #e4e4e4; */
+    width: 270px;
+    word-wrap: break-word;
+    font-size: 14px;
 }
 .place {
     background: url(design/imges/top/top_chat.png) no-repeat;
