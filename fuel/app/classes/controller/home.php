@@ -24,6 +24,7 @@ use Controller\View_Webview;
 // Model
 use ERS\Common\Model;
 use ERS\Common\Model\Model_T_Shop;
+use ERS\Common\Model\Model_T_Menu;
 
 class Controller_Home extends View_Webview
 {
@@ -52,5 +53,8 @@ class Controller_Home extends View_Webview
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('home/index', $data);
     }
+
+
+
 	
 }

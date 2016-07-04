@@ -23,6 +23,7 @@ use Controller\View_Webview;
 
 // Model
 use ERS\Common\Model;
+use ERS\Common\Model\Model_T_Shop;
 
 
 class Controller_Shop extends View_Webview
@@ -33,9 +34,11 @@ class Controller_Shop extends View_Webview
      * @access  public
      * @return  Response
      */
-    public function action_shop()
+    public function action_detail()
     {
         $data = array();
+
+        
 
         // View
         $this->template->title = $data['title'] = array('SHOP');
