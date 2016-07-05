@@ -7,7 +7,8 @@
                 <li class="gNav03"><a href="#"><img src="/design/common/img/header/menu.png" alt="" /></a></li>
             </ul>
         </header><!-- header -->
- <p class="titname iconarr">
+        <?php foreach ($list as $info): ?>
+ 　　　　<p class="titname iconarr">
             Category
         </p>
         
@@ -15,7 +16,7 @@
             <div class="shopdetail">
             <div class="shopsec clearfix">
             <ul class="shop_l"> 
-                <li class="shop_tlt">Shop name</li>
+                <li class="shop_tlt"><?=$info['shop_name'];?></li>
                 <li class="shop_txt">Area / Category</li>
                 <li><span class="shopIcon01"><img src="/design/imges/shopdetail/shopdetail_02.png" alt="img" />000000</span><span class="shopIcon02"><img src="/design/imges/shopdetail/shopdetail_03.png" alt="img" />000000</span></li>
             </ul>
@@ -122,6 +123,7 @@
            
         </div>
         </div><!-- content -->
+        <?php endforeach; ?>
         <ul class="footer clearfix">
                 <li><a href="#"><img src="/design/common/img/footer/ft_img01_off.png" alt="" /></a></li>
                 <li><a href="#"><img src="/design/common/img/footer/ft_img02_off.png" alt="" /></a></li>
