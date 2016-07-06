@@ -8,6 +8,7 @@
             </ul>
         </header><!-- header -->
         <?php foreach ($list as $info): ?>
+            
  　　　　<p class="titname iconarr">
             Category
         </p>
