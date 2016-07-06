@@ -16,7 +16,7 @@
             <div class="shopdetail">
             <div class="shopsec clearfix">
             <ul class="shop_l"> 
-                <li class="shop_tlt"><?=$info['shop_name'];?></li>
+                <li class="shop_tlt"><?=$info['shop_name'];?></a></li>
                 <li class="shop_txt">Area / Category</li>
                 <li><span class="shopIcon01"><img src="/design/imges/shopdetail/shopdetail_02.png" alt="img" />000000</span><span class="shopIcon02"><img src="/design/imges/shopdetail/shopdetail_03.png" alt="img" />000000</span></li>
             </ul>
