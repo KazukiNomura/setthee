@@ -38,17 +38,30 @@ class Controller_Shop extends View_Webview
     {
         $data = array();
 
-        $data['list'] = Model_T_Shop::find('all', array(
-            'where' => array(
-                'del_flag' => 0
-            ),
-            'order_by' => array('id' => 'desc')
-        ));
-        // self::debug($list);
+        $shop_id = \Input::get('id');
 
-        // マスター取得
-        $data['master_info'] = \Config::get('master.shop');
-        // self::debug($data['master_info']);
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_Shop::updateByPk($params['id'], $params);
+            $shop_id = $params['id'];
+            \Response::redirect('shop/list');
+        }
+
+        $shop_info = Model_T_Shop::find('first', array(
+            'where' => array(
+                'id' => $shop_id
+            )
+        ));
+        // self::debug($shop_info);
+        if (!empty($shop_info)) {
+            $data['shop_info'] = $shop_info;
+        }
+         // self::debug($shop_info);
+    
+
 
         // View
         $this->template->title = $data['title'] = array('SHOP');
