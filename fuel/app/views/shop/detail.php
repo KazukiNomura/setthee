@@ -25,7 +25,7 @@
             </ul>
             <div class="shopsec01 clearfix">
                 <img src="/design/imges/shopdetail/shopdetail_baner.png" alt="thumbnail" />
-                <p class="shoppara">commentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcomment</p>
+                <p class="shoppara"><?=$shop_info['description'];?></p>
             </div>
             <p class="shoptable_tlt">Information</p>
             <table class="shopdetail_tb">

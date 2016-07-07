@@ -36,6 +36,7 @@ CREATE TABLE `t_shop` (
   `report_icon` varchar(128) NOT NULL,
   `genre_id` int(11) NOT NULL,
   `header_img` varchar(255) NOT NULL,
+  `description` varchar(128) NOT NULL,
   `address_info` varchar(128) NOT NULL,
   `businesshours` varchar(64) NOT NULL,
   `price` varchar(64) NOT NULL,

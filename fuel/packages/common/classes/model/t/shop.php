@@ -15,6 +15,7 @@ class Model_T_Shop extends Model
         'report_icon',
         'genre_id',
         'header_img',
+        'description',
         'address_info',
         'businesshours',
         'price',

@@ -76,11 +76,18 @@
                 </div>
                 <!-- genre チェックボックス-->
 
+                <div class="col-md-6">
+                  <i class="fa fa-cab">&nbsp;<label for="exampleInputEmail1">description</label></i>
+                  <input type="textarea" class="form-control" name="description" id="exampleInputEmail1" placeholder="description">
+                </div>
+                
+
                 <div class="col-md-6">           
                   <i class="fa fa-camera">&nbsp;<label for="exampleInputFile">Main visual</label></i>
                   <input type="file" id="exampleInputFile" name="header_img">
                 </div>
               </div>
+          
                <p align="center">
                 <button type="submit" class="btn btn-primary" style="margin:15px">Submit</button>
               </p> 
