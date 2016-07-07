@@ -14,8 +14,8 @@
             <div class="shopsec clearfix">
             <ul class="shop_l"> 
                 <li class="shop_tlt"><?=$shop_info['shop_name'];?></li>
-                <li class="shop_txt">Area / Category</li>
-                <li><span class="shopIcon01"><img src="/design/imges/shopdetail/shopdetail_02.png" alt="img" />000000</span><span class="shopIcon02"><img src="/design/imges/shopdetail/shopdetail_03.png" alt="img" />000000</span></li>
+                <li class="shop_txt"><?=$shop_info['address'];?></li>
+                <li><span class="shopIcon01"><img src="/design/imges/shopdetail/shopdetail_02.png" alt="img" /><?=$shop_info['price'];?></span><span class="shopIcon02"><img src="/design/imges/shopdetail/shopdetail_03.png" alt="img" /><?=$shop_info['price'];?></span></li>
             </ul>
             <p class="shop_r"><img src="/design/imges/shopdetail/shopdetail_01.png" alt="img" /></p>
             </div>
@@ -31,7 +31,7 @@
             <table class="shopdetail_tb">
                 <tr>
                     <th>Shop name</th>
-                    <td>Shop name</td>
+                    <td><?=$shop_info['shop_name'];?></td>
                 </tr>
                 <tr>
                     <th>Category</th>
@@ -43,7 +43,7 @@
                 </tr>
                 <tr>
                     <th>Address</th>
-                    <td>texttexttexttexttexttext</td>
+                    <td><?=$shop_info['address'];?></td>
                 </tr>
                 <tr>
                     <th>Open/Close</th>
@@ -51,19 +51,19 @@
                 </tr>
                 <tr>
                     <th>Cost average</th>
-                    <td>texttexttexttexttexttext</td>
+                    <td><?=$shop_info['price'];?></td>
                 </tr>
                 <tr>
                     <th>Credit card</th>
-                    <td>texttexttexttexttexttext</td>
+                    <td><?=$shop_info['credit_id'];?></td>
                 </tr>
                 <tr>
                     <th>Phone</th>
-                    <td>texttexttexttexttexttext</td>
+                    <td><?=$shop_info['phone_number'];?></td>
                 </tr>
                 <tr>
                     <th>WiFi</th>
-                    <td>texttexttexttexttexttext</td>
+                    <td><?=$shop_info['wi-fi'];?></td>
                 </tr>
             </table>
             <div class="shopdetail_photo clearfix">
