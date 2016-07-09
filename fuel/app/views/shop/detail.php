@@ -8,7 +8,6 @@
             </ul>
         </header><!-- header -->
  　　　　<p class="titname iconarr">Category</p>
-        
         <div class="content clearfix">
             <div class="shopdetail">
             <div class="shopsec clearfix">
