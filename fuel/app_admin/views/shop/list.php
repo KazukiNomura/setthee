@@ -13,6 +13,7 @@
                   <th>Coupon</th>
                   <th>Menu</th>
                   <th>Photo</th>
+                  <th>Report</th>
                   <th><i class="fa fa-share"></i> Delete</th>
                 </tr>
                 </thead>
@@ -38,6 +39,7 @@
                   </td>
                   <td><a href="/shop/menulist?id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-danger">MENU</button></a></td>
                   <td><a href="/shop/photolist?id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-warning">PHOTO</button></a></td>
+                  <td><a href="/report/reportlist?id=<?=$info['id'];?>"><button type="button" class="btn btn-block btn-warning">Report</button></a></td>
                   <td><a href="/shop/delete?id=<?=$info['id'];?>"><i class="fa fa-share"></i></a></td>
                 </tr>
           <?php endforeach; ?>

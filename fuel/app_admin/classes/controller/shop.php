@@ -26,6 +26,9 @@ use ERS\Common\Model;
 use ERS\Common\Model\Model_T_Shop;
 use ERS\Common\Model\Model_T_Menu;
 use ERS\Common\Model\Model_T_Photo;
+use ERS\Common\Model\Model_T_Report;
+use ERS\Common\Model\Model_T_coupon;
+
 
 class Controller_Shop extends View_Admin
 {
@@ -507,6 +510,72 @@ class Controller_Shop extends View_Admin
         $this->template->title = $data['title'] = array('Photo Delete');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('shop/deletephoto', $data);
+    }
+
+        /**
+     * Reportリスト
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_reportlist()
+    {
+        $data = array();
+
+        $shop_id = \Input::get('id');
+         //self::debug($shop_id);
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+
+            // 設定（ファイル保存場所）
+            $config = array(
+                'path' => 'uploads',
+            );
+
+            // アップロード実行
+            Upload::process($config);
+
+            $getFile = Upload::get_files();
+            // self::debug($getFile); //exit;
+
+            // 検証
+            if (Upload::is_valid()) {         
+                // アップロードファイルを保存
+                Upload::save();         
+            }
+
+            // メニューインサート
+            $params = \Input::post();
+            if (isset($getFile[0]['name'])) {
+                $params['photo'] = $getFile[0]['name'];
+            }
+            // self::debug($params); exit;
+            Model_T_Report::insert($params);
+            $shop_id = \Input::post('shop_id');
+        } 
+        //self::debug($shop_id);
+
+        $data['list'] = Model_T_Report::find('all', array(
+            'where' => array(
+              'shop_id' => $shop_id,
+              'del_flag' => 0
+
+            ),
+            'order_by' => array('shop_id' => 'desc')
+        ));
+         //self::debug($data);
+
+
+        // shop_id受け渡し__________________
+        $data['shop_id'] = $shop_id;
+         //self::debug($data); 
+
+
+        // View
+        $this->template->title = $data['title'] = array('Report List');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('report/reportlist', $data);
     }
 
 
