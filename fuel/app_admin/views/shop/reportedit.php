@@ -1,7 +1,7 @@
     <!-- Main content -->
     <section class="content">
     <?php echo Form::open(array('method' => 'post')); ?>
-    <input type="hidden" name="id" value="<?=$report_info['id'];?>">
+
 
 
       <div class="form-group">
