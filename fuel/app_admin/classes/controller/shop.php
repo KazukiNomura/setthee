@@ -473,7 +473,7 @@ class Controller_Shop extends View_Admin
     }
 
    /**
-     * MENUリスト削除
+     * Photoリスト削除
      *
      * @access  public
      * @return  Response
@@ -513,7 +513,7 @@ class Controller_Shop extends View_Admin
     }
 
             /**
-     * Report
+     * Report登録フォーム
      *
      * @access  public
      * @return  Response
@@ -552,34 +552,11 @@ class Controller_Shop extends View_Admin
 
         // 情報登録 ---------------------------------
         if (\Input::post()) {
-
-            // 設定（ファイル保存場所）
-            $config = array(
-                'path' => 'uploads',
-            );
-
-            // アップロード実行
-            Upload::process($config);
-
-            $getFile = Upload::get_files();
-            // self::debug($getFile); //exit;
-
-            // 検証
-            if (Upload::is_valid()) {         
-                // アップロードファイルを保存
-                Upload::save();         
-            }
-
-            // メニューインサート
             $params = \Input::post();
-            if (isset($getFile[0]['name'])) {
-                $params['photo'] = $getFile[0]['name'];
-            }
-            // self::debug($params); exit;
+            self::debug($params);
+
             Model_T_Report::insert($params);
-            $shop_id = \Input::post('shop_id');
-        } 
-        //self::debug($shop_id);
+        }    
 
         $data['list'] = Model_T_Report::find('all', array(
             'where' => array(
@@ -602,6 +579,88 @@ class Controller_Shop extends View_Admin
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('shop/reportlist', $data);
     }
+
+          /**
+     * Report修正
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_reportedit()
+    {
+        $data = array();
+
+        $menu_id = \Input::get('id');
+
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_Report::updateByPk($params['id'], $params);
+            $menu_id = $params['id'];
+        }
+         //self::debug($menu_id);
+
+
+        $menu_info = Model_T_Report::find('first', array(
+            'where' => array(
+                'id' => $menu_id
+            )
+        ));
+        //self::debug($menu_info);
+        if (!empty($menu_info)) {
+            $data['menu_info'] = $menu_info;
+        }
+        //self::debug($menu_info);
+
+        // View
+        $this->template->title = $data['title'] = array('Edit MENU');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/reportedit', $data);
+    }
+
+       /**
+     * Reportリスト削除
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_deletereport()
+    {
+        $data = array();
+
+                // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            $update_param = array(
+              'del_flag' => 1
+            );
+
+            Model_T_Report::updateByPk($params['id'], $update_param);
+            \Response::redirect('shop/list');
+        }     
+
+
+
+        $menu_id = \Input::get('id');
+         self::debug($menu_id);
+
+         // menu_id受け渡し__________________
+        $data['shop_id'] = $menu_id;
+         self::debug($data); 
+
+
+
+        // View
+        $this->template->title = $data['title'] = array('Photo Delete');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/deletereport', $data);
+    }
+
 
 
 

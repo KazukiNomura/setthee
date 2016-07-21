@@ -11,20 +11,22 @@
                   <th>ID</th>
                   <th><i class="fa fa-wrench"></i> Report Title</th>
                   <th>Visit Date</th>
+                  <th><i class="fa fa-share"></i> Delete</th>
                 </tr>
                 </thead>
                 <tbody>
                 <!--  <tabel name> -->
 
-          <?php foreach ($list as $info): ?>
+          <?php foreach ($list as $menu_info): ?>
                 <!-- <tabel list 1>  -->
                 <tr>
                   
-                  <td><?=$info['id'];?></td>
+                  <td><?=$menu_info['id'];?></td>
                   <td>
-                  <a href="/report/edit?id=<?=$info['id'];?>"><?=$info['title'];?></a>
+                  <a href="/shop/reportedit?id=<?=$menu_info['shop_id'];?>"><?=$menu_info['title'];?></a>
                   </td>
-                  <td><a href="/report/edit?id=<?=$info['id'];?>"><?=$info['visit_date'];?></a></a></td>
+                  <td><a href="/shop/reportedit?id=<?=$menu_info['shop_id'];?>"><?=$menu_info['visit_date'];?></a></a></td>
+                   <td><a href="/shop/deletemenu?id=<?=$menu_info['id'];?>"><i class="fa fa-share"></i></a></td>
                 </tr>
                 <!-- <tabel list 1>  -->
           <?php endforeach; ?>
@@ -45,9 +47,11 @@
             </div>
             </div>
 
-                          <section class="content">
-    <?php echo Form::open(array('method' => 'post')); ?>
-
+          
+          <!-- 登録フォーム -->
+          <section class="content">
+          <?php echo Form::open(array('method'=>'post', 'enctype'=>'multipart/form-data')); ?>
+            <input type="hidden" name="shop_id" value="<?=$shop_id;?>">
 
                     <div class="form-group">
                   <label for="exampleInputEmail1">Report Title</label>
@@ -78,13 +82,10 @@
             <form>
               <?php echo Form::close(); ?>
 
+       </div>
+      </section>
+    <!-- 登録フォーム -->
 
-
-        <!-- /.col-->
-      </div>
-
-      <!-- ./row -->
-    </section>
             <!-- /.box-body -->
           </div>
            <!-- /.box -->
