@@ -24,6 +24,7 @@ use Controller\View_Webview;
 // Model
 use ERS\Common\Model;
 use ERS\Common\Model\Model_T_Shop;
+use ERS\Common\Model\Model_T_coupon;
 
 
 class Controller_Shop extends View_Webview
