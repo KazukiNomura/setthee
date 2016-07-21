@@ -512,6 +512,31 @@ class Controller_Shop extends View_Admin
         $this->template->content = View::forge('shop/deletephoto', $data);
     }
 
+            /**
+     * Report
+     *
+     * @access  public
+     * @return  Response
+     */
+    public function action_reportinput()
+    {
+        $data = array();
+
+
+        // 情報登録 ---------------------------------
+        if (\Input::post()) {
+            $params = \Input::post();
+            self::debug($params);
+
+            Model_T_Report::insert($params);
+        }        
+
+        // View
+        $this->template->title = $data['title'] = array('Report input');
+        $this->template->auth  = $this->auth;
+        $this->template->content = View::forge('shop/reportinput', $data);
+    }
+
         /**
      * Reportリスト
      *
@@ -575,7 +600,7 @@ class Controller_Shop extends View_Admin
         // View
         $this->template->title = $data['title'] = array('Report List');
         $this->template->auth  = $this->auth;
-        $this->template->content = View::forge('report/reportlist', $data);
+        $this->template->content = View::forge('shop/reportlist', $data);
     }
 
 

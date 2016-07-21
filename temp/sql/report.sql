@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `t_report` (
   `id` int(11) NOT NULL,
+  `shop_id` int(11) NOT NULL,
   `title` varchar(128) NOT NULL,
   `visit_date` date NOT NULL,
   `description` text NOT NULL,

@@ -7,6 +7,7 @@ class Model_T_Report extends Model
 {
     protected static $_properties = array(
         'id',
+        'shop_id',
         'title',
         'visit_date',
         'description',
