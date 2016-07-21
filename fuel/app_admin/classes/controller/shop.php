@@ -616,7 +616,7 @@ class Controller_Shop extends View_Admin
         //self::debug($menu_info);
 
         // View
-        $this->template->title = $data['title'] = array('Edit MENU');
+        $this->template->title = $data['title'] = array('Report edit');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('shop/reportedit', $data);
     }
@@ -656,7 +656,7 @@ class Controller_Shop extends View_Admin
 
 
         // View
-        $this->template->title = $data['title'] = array('Photo Delete');
+        $this->template->title = $data['title'] = array('Report Delete');
         $this->template->auth  = $this->auth;
         $this->template->content = View::forge('shop/deletereport', $data);
     }
