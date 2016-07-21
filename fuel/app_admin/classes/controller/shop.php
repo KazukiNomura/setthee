@@ -524,8 +524,8 @@ class Controller_Shop extends View_Admin
 
 
         // 情報登録 ---------------------------------
-        if (\Input::post()) {
-            $params = \Input::post();
+        if (\Input::get()) {
+            $params = \Input::get();
             self::debug($params);
 
             Model_T_Report::insert($params);
@@ -551,8 +551,8 @@ class Controller_Shop extends View_Admin
          //self::debug($shop_id);
 
         // 情報登録 ---------------------------------
-        if (\Input::post()) {
-            $params = \Input::post();
+        if (\Input::get()) {
+            $params = \Input::get();
             self::debug($params);
 
             Model_T_Report::insert($params);
@@ -595,11 +595,11 @@ class Controller_Shop extends View_Admin
 
         // 情報登録 ---------------------------------
         if (\Input::post()) {
-            $params = \Input::post();
+            $params = \Input::get();
             self::debug($params);
 
             Model_T_Report::updateByPk($params['id'], $params);
-            $menu_id = $params['id'];
+            $shop_id = $params['id'];
         }
          //self::debug($menu_id);
 
@@ -631,9 +631,9 @@ class Controller_Shop extends View_Admin
     {
         $data = array();
 
-                // 情報登録 ---------------------------------
-        if (\Input::post()) {
-            $params = \Input::post();
+                // Report削除 ---------------------------------
+        if (\Input::get()) {
+            $params = \Input::get();
             self::debug($params);
 
             $update_param = array(

@@ -50,7 +50,7 @@
           
           <!-- 登録フォーム -->
           <section class="content">
-          <?php echo Form::open(array('method'=>'post', 'enctype'=>'multipart/form-data')); ?>
+          <?php echo Form::open(array('method'=>'get', 'enctype'=>'multipart/form-data')); ?>
             <input type="hidden" name="shop_id" value="<?=$shop_id;?>">
 
                     <div class="form-group">
