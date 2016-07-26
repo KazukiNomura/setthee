@@ -26,7 +26,7 @@
                   <a href="/shop/reportedit?id=<?=$menu_info['shop_id'];?>"><?=$menu_info['title'];?></a>
                   </td>
                   <td><a href="/shop/reportedit?id=<?=$menu_info['shop_id'];?>"><?=$menu_info['visit_date'];?></a></a></td>
-                   <td><a href="/shop/deletemenu?id=<?=$menu_info['id'];?>"><i class="fa fa-share"></i></a></td>
+                   <td><a href="/shop/deletreport?id=<?=$menu_info['id'];?>"><i class="fa fa-share"></i></a></td>
                 </tr>
                 <!-- <tabel list 1>  -->
           <?php endforeach; ?>
